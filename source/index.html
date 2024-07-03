@@ -1,21 +1,312 @@
 <!DOCTYPE html>
-<html lang="ru" data-validate="html">
-
+<html class="page" lang="ru" data-validate="html">
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SUPERGYM</title>
+    <title>Фитнес центр «Supergym»</title>
     <link rel="stylesheet" href="sass/style.scss">
   </head>
 
-  <body class="page-body">
+  <body class="page__body">
+    <div class="hero" data-test="hero">
+      <header class="hero__header">
+        <picture>
+          <source type="image/svg+xml" media="(min-width: 1366px)" srcset="img/logo-title.svg" width="130" height="26">
+          <source type="image/svg+xml" media="(min-width: 768px)" srcset="img/logo-title.svg" width="110" height="22">
+          <img class="hero__header-image" src="img/logo-title.svg" width="100" height="20" alt="Логотип Фитнес центра «Supergym»">
+        </picture>
+        <a class="hero__header-contacts" href="tel:+79999999999">8 800 555-55-55</a>
+      </header>
+      <section class="section hero__info">
+        <h1 class="hero__title">Фитнес центр</h1>
+        <p class="section__title hero__additional-info">Омск</p>
+        <p class="hero__description">Тренажёрный&nbsp;зал Групповые&nbsp;занятия Кардио-зона</p>
+        <picture>
+          <source type="image/webp" media="(min-width: 1366px)"
+            srcset="images/hero-desktop-1@1x.webp 1x, images/hero-desktop-1@2x.webp 2x" width="500" height="524">
+          <source type="image/webp" media="(min-width: 768px)"
+            srcset="images/hero-tablet-1@1x.webp 1x, images/hero-tablet-1@2x.webp 2x" width="324" height="390">
+          <source type="image/png" media="(min-width: 1366px)"
+            srcset="images/hero-desktop-1@1x.png 1x, images/hero-desktop-1@2x.png 2x" width="500" height="524">
+          <img class="hero__image" src="images/hero-tablet-1@1x.png" srcset="images/hero-tablet-1@2x.png 2x" width="324" height="390"
+           alt="Тренер фитнес центра в футболке супермена">
+        </picture>
+        <a class="hero__action button button__primary" href="#">
+          Купить абонемент
+        </a>
+      </section>
+    </div>
+    <section class="about" data-test="about">
+      <h2 class="visually-hidden">Информация о тренажерном зале</h2>
+      <p class="section__title about__title">Тренажёрный зал</p>
+      <p class="about__additional-info">Просторный зал площадью 900 кв/м</p>
+      <p class="about__description">Supergym – самый большой фитнес центр за Уралом и идеальное место для укрепления тела и здоровья. Тренажёрный зал оснащён всем необходимым современным оборудованием для всех спортсменов.</p>
+      <picture>
+        <source type="image/webp" media="(min-width: 1366px)"
+          srcset="images/about-desktop-1@1x.webp 1x, images/about-desktop-1@2x.webp 2x" width="600" height="600">
+        <source type="image/webp" media="(min-width: 768px)"
+          srcset="images/about-tablet-1@1x.webp 1x, images/about-tablet-1@2x.webp 2x" width="476" height="476">
+        <source type="image/webp"
+          srcset="images/about-mobile-1@1x.webp 1x, images/about-mobile-1@2x.webp 2x" width="280" height="280">
+        <source type="image/png" media="(min-width: 1366px)"
+          srcset="images/about-desktop-1@1x.png 1x, images/about-desktop-1@2x.png 2x" width="600" height="600">
+        <source type="image/png" media="(min-width: 768px)" srcset="images/about-tablet-1@1x.png 1x, images/about-tablet-1@2x.png 2x" width="476"
+          height="476">
+        <img class="about__image" src="images/about-mobile-1@1x.png" srcset="images/about-mobile-1@2x.png 2x" width="280"
+          height="280" alt="Тренажерный зал с тренажерами">
+      </picture>
+      <div class="about__video">
+        <div class="about__video-cover video-cover">
+          <picture>
+            <source type="image/webp" media="(min-width: 1366px)"
+              srcset="images/about-desktop-1@1x.webp 1x, images/about-desktop-1@2x.webp 2x" width="360" height="230">
+            <source type="image/webp" media="(min-width: 768px)"
+              srcset="images/about-tablet-1@1x.webp 1x, images/about-tablet-1@2x.webp 2x" width="270" height="170">
+            <source type="image/webp"
+              srcset="images/about-mobile-1@1x.webp 1x, images/about-mobile-1@2x.webp 2x" width="320" height="170">
+            <source type="image/png" media="(min-width: 1366px)"
+              srcset="images/about-desktop-1@1x.png 1x, images/about-desktop-1@2x.png 2x" width="360" height="230">
+            <source type="image/png" media="(min-width: 768px)" srcset="images/about-tablet-1@1x.png 1x, images/about-tablet-1@2x.png 2x" width="270"
+              height="170">
+            <img class="video-cover__image" src="images/about-mobile-1@1x.png" srcset="images/about-mobile-1@2x.png 2x" width="320"
+              height="170" alt="Кадр из видео о тренажерном зале">
+          </picture>
+          <button class="video-cover__button-play" type="button">
+            <span class="visually-hidden">Проиграть ролик</span>
+          </button>
+        </div>
+      </div>
+    </section>
+    <section class="price" data-test="price">
+      <h2 class="section__title price__title">Абонементы</h2>
+      <div class="price__kinds subscription">
+        <ul class="subscription__tabs">
+          <li>
+            <button class="subscription__tab-title subscription__tab-title--active" type="button">
+              1 месяц
+            </button>
+          </li>
+          <li>
+            <button class="subscription__tab-title" type="button">
+              6 месяцев
+            </button>
+          </li>
+          <li>
+            <button class="subscription__tab-title" type="button">
+              12 месяцев
+            </button>
+          </li>
+        </ul>
+        <ul class="subscription__tab-items">
+          <li class="subscription__tab-item subscription__tab-item--active">
+            <ul class="subscription__cards">
+              <li class="subscription__card card">
+                <h3 class="visually-hidden">Занятия с тренером</h3>
+                <p class="card__title">С тренером</p>
+                <p class="card__description">12 занятий</p>
+                <p class="card__price">
+                  <span class="card__price--value">5000</span>
+                  <picture>
+                    <source type="image/svg+xml" media="(min-width: 768px)" srcset="icons/stack.svg#currency-icon" width="30" height="42">
+                    <img class="hero__header-image" src="icons/stack.svg#currency-icon" width="24" height="33" alt="Рублей">
+                  </picture>
+                </p>
+                <a class="card__action button button__primary" href="#">
+                  Купить абонемент
+                </a>
+              </li>
+              <li class="subscription__card card">
+                <h3 class="visually-hidden">Занятия днем</h3>
+                <p class="card__title">Дневной</p>
+                <p class="card__description">с 8:00 до 17:00</p>
+                <p class="card__price">
+                  <span class="card__price--value">1700</span>
+                  <picture>
+                    <source type="image/svg+xml" media="(min-width: 768px)" srcset="icons/stack.svg#currency-icon" width="30" height="42">
+                    <img class="hero__header-image" src="icons/stack.svg#currency-icon" width="24" height="33" alt="Рублей">
+                  </picture>
+                </p>
+                <a class="card__action button button__primary" href="#">
+                  Купить абонемент
+                </a>
+              </li>
+              <li class="subscription__card card">
+                <h3 class="visually-hidden">Занятия весь день</h3>
+                <p class="card__title">Полный день</p>
+                <p class="card__description">с 8:00 до 22:00</p>
+                <p class="card__price">
+                  <span class="card__price--value">2700</span>
+                  <picture>
+                    <source type="image/svg+xml" media="(min-width: 768px)" srcset="icons/stack.svg#currency-icon" width="30" height="42">
+                    <img class="hero__header-image" src="icons/stack.svg#currency-icon" width="24" height="33" alt="Рублей">
+                  </picture>
+                </p>
+                <a class="card__action button button__primary" href="#">
+                  Купить абонемент
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li class="subscription__tab-item">
+            <ul class="subscription__cards">
+              <li class="subscription__card card">
+                <h3 class="visually-hidden">Занятия с тренером</h3>
+                <p class="card__title">С тренером</p>
+                <p class="card__description">12 занятий</p>
+                <p class="card__price">
+                  <span class="card__price--value">30 000</span>
+                  <picture>
+                    <source type="image/svg+xml" media="(min-width: 768px)" srcset="icons/stack.svg#currency-icon" width="30" height="42">
+                    <img class="hero__header-image" src="icons/stack.svg#currency-icon" width="24" height="33" alt="Рублей">
+                  </picture>
+                </p>
+                <a class="card__action button button__primary" href="#">
+                  Купить абонемент
+                </a>
+              </li>
+              <li class="subscription__card card">
+                <h3 class="visually-hidden">Занятия днем</h3>
+                <p class="card__title">Дневной</p>
+                <p class="card__description">с 8:00 до 17:00</p>
+                <p class="card__price">
+                  <span class="card__price--value">10 200</span>
+                  <picture>
+                    <source type="image/svg+xml" media="(min-width: 768px)" srcset="icons/stack.svg#currency-icon" width="30" height="42">
+                    <img class="hero__header-image" src="icons/stack.svg#currency-icon" width="24" height="33" alt="Рублей">
+                  </picture>
+                </p>
+                <a class="card__action button button__primary" href="#">
+                  Купить абонемент
+                </a>
+              </li>
+              <li class="subscription__card card">
+                <h3 class="visually-hidden">Занятия весь день</h3>
+                <p class="card__title">Полный день</p>
+                <p class="card__description">с 8:00 до 22:00</p>
+                <p class="card__price">
+                  <span class="card__price--value">16 200</span>
+                  <picture>
+                    <source type="image/svg+xml" media="(min-width: 768px)" srcset="icons/stack.svg#currency-icon" width="30" height="42">
+                    <img class="hero__header-image" src="icons/stack.svg#currency-icon" width="24" height="33" alt="Рублей">
+                  </picture>
+                </p>
+                <a class="card__action button button__primary" href="#">
+                  Купить абонемент
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li class="subscription__tab-item">
+            <ul class="subscription__cards">
+              <li class="subscription__card card">
+                <h3 class="visually-hidden">Занятия с тренером</h3>
+                <p class="card__title">С тренером</p>
+                <p class="card__description">12 занятий</p>
+                <p class="card__price">
+                  <span class="card__price--value">60 000</span>
+                  <picture>
+                    <source type="image/svg+xml" media="(min-width: 768px)" srcset="icons/stack.svg#currency-icon" width="30" height="42">
+                    <img class="hero__header-image" src="icons/stack.svg#currency-icon" width="24" height="33" alt="Рублей">
+                  </picture>
+                </p>
+                <a class="card__action button button__primary" href="#">
+                  Купить абонемент
+                </a>
+              </li>
+              <li class="subscription__card card">
+                <h3 class="visually-hidden">Занятия днем</h3>
+                <p class="card__title">Дневной</p>
+                <p class="card__description">с 8:00 до 17:00</p>
+                <p class="card__price">
+                  <span class="card__price--value">20 400</span>
+                  <picture>
+                    <source type="image/svg+xml" media="(min-width: 768px)" srcset="icons/stack.svg#currency-icon" width="30" height="42">
+                    <img class="hero__header-image" src="icons/stack.svg#currency-icon" width="24" height="33" alt="Рублей">
+                  </picture>
+                </p>
+                <a class="card__action button button__primary" href="#">
+                  Купить абонемент
+                </a>
+              </li>
+              <li class="subscription__card card">
+                <h3 class="visually-hidden">Занятия весь день</h3>
+                <p class="card__title">Полный день</p>
+                <p class="card__description">с 8:00 до 22:00</p>
+                <p class="card__price">
+                  <span class="card__price--value">32 400</span>
+                  <picture>
+                    <source type="image/svg+xml" media="(min-width: 768px)" srcset="icons/stack.svg#currency-icon" width="30" height="42">
+                    <img class="hero__header-image" src="icons/stack.svg#currency-icon" width="24" height="33" alt="Рублей">
+                  </picture>
+                </p>
+                <a class="card__action button button__primary" href="#">
+                  Купить абонемент
+                </a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section class="games" data-test="games">
+      <h2 class="visually-hidden">Ближайшие соревнования</h2>
+      <p class="section__title games__title">Super Games</p>
+      <dl class="games__date-time">
+        <dt class="games__date--title">
+          Дата
+        </dt>
+        <dd class="games__date--value">
+          <span class="games__date--day">7</span>
+          <span class="games__date--month-year">Марта 2019</span>
+        </dd>
+        <dt class="games__time--title">
+          Время
+        </dt>
+        <dd class="games__time--value">
+          <span class="games__time--hours">12:00</span>
+        </dd>
+      </dl>
+      <p class="games__description">Ежегодные соревнования по CrossFit</p>
+      <a class="games__action button button__primary" href="#">
+        Заполнить Заявку
+      </a>
+      <picture>
+        <source type="image/webp" media="(min-width: 1366px)"
+          srcset="images/games-desktop-1@1x.webp 1x, images/games-desktop-1@2x.webp 2x" width="660" height="500">
+        <source type="image/webp" media="(min-width: 768px)"
+          srcset="images/games-tablet-1@1x.webp 1x, images/games-tablet-1@2x.webp 2x" width="378" height="348">
+        <source type="image/webp"
+          srcset="images/games-mobile-1@1x.webp 1x, images/games-mobile-1@2x.webp 2x" width="290" height="290">
+        <source type="image/png" media="(min-width: 1366px)"
+          srcset="images/games-desktop-1@1x.png 1x, images/games-desktop-1@2x.png 2x" width="660" height="500">
+        <source type="image/png" media="(min-width: 768px)" srcset="images/games-tablet-1@1x.png 1x, images/games-tablet-1@2x.png 2x" width="378"
+          height="348">
+        <img class="games__image" src="images/games-mobile-1@1x.png" srcset="images/games-mobile-1@2x.png 2x" width="290"
+          height="290" alt="Логотип соревнований">
+      </picture>
+    </section>
+    <section class="juri" data-test="juri">
+      <h2 class="section__title juri__title">Жюри</h2>
+      <div class="juri__wrapper">
+        <ul class="juri__list">
+          <li class="juri__item card">
+            <picture>
+
+            </picture>
+            <p class="card__title">
+
+            </p>
+          </li>
+        </ul>
+      </div>
+    </section>
     <!-- пример использования спрайта -->
-    <img src="/__spritemap#sprite-logo-view" alt="Это спрайт">
+    <!-- <img src="/__spritemap#sprite-logo-view" alt="Это спрайт">
     <svg>
       <use href="/__spritemap#sprite-user"></use>
-    </svg>
+    </svg> -->
     <!-- примеры требуемых атрибутов data-test="*" -->
-    <div data-test="hero">hero</div>
+    <!-- <div data-test="hero">hero</div>
     <div data-test="about">about</div>
     <div data-test="price">price</div>
     <div data-test="games">games</div>
@@ -25,7 +316,7 @@
     <div data-test="faq">faq</div>
     <div data-test="reviews">reviews</div>
     <div data-test="form">form</div>
-    <div data-test="footer">footer</div>
+    <div data-test="footer">footer</div> -->
     <script type="module" src="js/main.js"></script>
   </body>
 
