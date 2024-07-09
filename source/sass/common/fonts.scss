@@ -1,0 +1,6 @@
+@use "../common/mixins.scss";
+@include mixins.font-face("Alumni Sans", 600, normal, url("../../fonts/alumni-sans-semi-bold.woff2") format("woff2"), url("../fonts/alumni-sans-semi-bold.woff") format("woff"));
+@include mixins.font-face("Alumni Sans", 800, normal, url("../../fonts/alumni-sans-extra-bold.woff2") format("woff2"), url("../fonts/alumni-sans-extra-bold.woff") format("woff"));
+@include mixins.font-face("Roboto Condensed", 300, normal, url("../../fonts/roboto-condensed-light.woff2") format("woff2"), url("../fonts/roboto-condensed-light.woff") format("woff"));
+@include mixins.font-face("Roboto Condensed", 400, normal, url("../../fonts/roboto-condensed-regular.woff2") format("woff2"), url("../fonts/roboto-condensed-regular.woff") format("woff"));
+@include mixins.font-face("Roboto Condensed", 700, normal, url("../../fonts/roboto-condensed-bold.woff2") format("woff2"), url("../fonts/roboto-condensed-bold.woff") format("woff"));
