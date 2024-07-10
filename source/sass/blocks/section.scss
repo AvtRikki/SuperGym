@@ -1,0 +1,13 @@
+@use "../common/variables.scss";
+@use "../common/mixins.scss";
+
+.section {
+  display: flex;
+  flex-direction: column;
+}
+
+.section__title {
+  margin: 0;
+  padding: 0;
+  @include mixins.font-info(variables.$font-secondary, 32px, 32px, 600);
+}

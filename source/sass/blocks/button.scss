@@ -1,0 +1,15 @@
+@use "../common/variables.scss";
+@use "../common/mixins.scss";
+
+.button {
+  border-width: 2px;
+  border-style: solid;
+  text-decoration: none;
+  text-align: center;
+}
+
+.button__primary {
+  color: variables.$button-color-accent;
+  border-color: variables.$button-color-accent;
+  padding: 22px;
+}

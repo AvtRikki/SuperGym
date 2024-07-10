@@ -1,0 +1,71 @@
+@use "../common/variables.scss";
+@use "../common/mixins.scss";
+
+.hero {
+  background: variables.$background-color-alternate;
+}
+
+.hero__header {
+  padding: 16px 15px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.hero__header-image {
+  display: block;
+}
+
+.hero__header-contacts {
+  @include mixins.font-info(variables.$font-primary, 22px, 22px, 700);
+  text-decoration: none;
+  color: variables.$font-color-secondary;
+}
+
+.hero__image {
+  @include mixins.mobile {
+    display: none;
+  }
+}
+
+.hero__info {
+  padding: 48px 15px 32px 15px;
+  display: grid;
+  grid-template-columns: auto 290px auto;
+}
+
+.hero__additional-info {
+  font-family: variables.$font-secondary;
+  order: -1;
+  color: variables.$font-color-secondary;
+  grid-column: 2 / 3;
+  grid-row: 1 / 2;
+  place-self: start end;
+}
+
+.hero__title {
+  @include mixins.font-info(variables.$font-secondary, 62px, 62px, 800);
+  margin: 0;
+  padding: 0;
+  color: variables.$font-color-secondary;
+  grid-column: 2 / 3;
+  grid-row: 2 / 3;
+  place-self: end;
+  text-align: end;
+  max-width: 250px;
+}
+
+.hero__description {
+  @include mixins.font-info(variables.$font-primary, 14px, 20px);
+  color: variables.$font-color-secondary;
+  margin: 0;
+  padding: 0;
+  grid-row: 2 / 3;
+  grid-column: 2 / 3;
+  place-self: end start;
+  max-width: 140px;
+}
+
+.hero__action {
+  grid-column: 2 / 3;
+  margin-top: 48px;
+}
