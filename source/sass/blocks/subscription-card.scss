@@ -1,0 +1,57 @@
+@use "../common/variables.scss";
+@use "../common/mixins.scss";
+
+.subscription-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 18px;
+  padding: 50px 42px;
+}
+
+.subscription-card__title {
+  @include mixins.font-info(variables.$font-primary, 22px, 22px, 700);
+  margin: 0;
+}
+
+.subscription-card__description {
+  @include mixins.font-info(variables.$font-primary, 14px, 22px, 300);
+  margin: 0 0 66px;
+}
+
+.subscription-card__price {
+  @include mixins.font-info(variables.$font-primary, 48px, 72px, 700);
+  margin: 0;
+  color: variables.$font-color-accent;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  position: relative;
+
+  &::before {
+    @include mixins.font-info(variables.$font-primary, 80px, 120px, 700);
+    content: attr(data-price);
+    position: absolute;
+    color: variables.$font-color-shadow;
+    z-index: 1;
+  }
+}
+
+.subscription-card__price--value {
+  position: relative;
+  margin-right: 10px;
+  z-index: 2;
+}
+
+.subscription-card__currency {
+  position: relative;
+  color: variables.$font-color-primary;
+  z-index: 2;
+}
+
+.subscription-card__action {
+  @include mixins.font-info(variables.$font-primary, 12px, 12px, 700);
+  border-color: variables.$font-color-primary;
+  color: variables.$font-color-primary;
+  align-self: stretch;
+}

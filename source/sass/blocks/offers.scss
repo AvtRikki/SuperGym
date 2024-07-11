@@ -1,0 +1,6 @@
+@use "../common/variables.scss";
+@use "../common/mixins.scss";
+
+.offers__list {
+  @include mixins.list-base;
+}

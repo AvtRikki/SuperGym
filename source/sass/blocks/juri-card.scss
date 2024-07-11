@@ -1,0 +1,25 @@
+@use "../common/variables.scss";
+@use "../common/mixins.scss";
+
+.juri-card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.juri-card__info {
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(variables.$background-color-accent, 0.89);
+  box-shadow: 0 0 35px 0 variables.$shadow-color-primary;
+}
+
+.juri-card__achievements {
+  @include mixins.list-base();
+}

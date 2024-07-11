@@ -1,0 +1,19 @@
+@use "../common/variables.scss";
+@use "../common/mixins.scss";
+
+.juri {
+  padding: 40px 15px;
+}
+
+.juri__title {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.juri__list {
+  @include mixins.list-base();
+}
+
+.juri__button {
+  display: none;
+}

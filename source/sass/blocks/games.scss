@@ -1,0 +1,64 @@
+@use "../common/variables.scss";
+@use "../common/mixins.scss";
+
+.games {
+  padding: 25px 15px;
+  color: variables.$font-color-secondary;
+}
+
+.games__wrapper {
+  background-color: variables.$background-color-banner;
+  display: grid;
+  grid-template-columns: 1fr min-content;
+  grid-column-gap: 17px;
+  padding: 40px;
+}
+
+.games__title {
+  @include mixins.font-info(variables.$font-secondary, 48px, 54px, 600);
+}
+
+.games__time--title,
+.games__date--title {
+  @include mixins.font-info(variables.$font-primary, 16px, 20px, 300);
+  margin-bottom: 3px;
+}
+
+.games__time--value,
+.games__date--value {
+  position: relative;
+  margin: 0;
+  padding-top: 2px;
+  display: flex;
+
+  &::after {
+    width: 100%;
+    height: 1px;
+    position: absolute;
+    content: "";
+    left: 0;
+    top: 0;
+    background-color: variables.$background-color-primary;
+  }
+}
+
+.games__time--hours,
+.games__date--day {
+  @include mixins.font-info(variables.$font-primary, 24px, 24px, 700);
+  margin-right: 3px;
+}
+
+.games__date--month-year {
+  @include mixins.font-info(variables.$font-primary, 12px, 12px);
+}
+
+.games__description {
+  @include mixins.font-info(variables.$font-primary, 16px, 20px, 300);
+  grid-column: 1/-1;
+}
+
+.games__action {
+  @include mixins.font-info(variables.$font-primary, 12px, 12px, 700);
+  grid-column: 1/-1;
+}
+
