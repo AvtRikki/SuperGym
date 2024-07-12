@@ -2,24 +2,95 @@
 @use "../common/mixins.scss";
 
 .juri-card {
-  position: relative;
+  display: grid;
+  width: 100%;
+  height: 100%;
+  max-width: 260px;
+  background-color: variables.$background-color-accent;
+
+  @include mixins.mobile {
+    display: none;
+
+    &:first-child {
+      display: grid;
+    }
+  }
+
+  &:hover .juri-card__info {
+    display: block;
+  }
+
+  &:hover .juri-card__details {
+    height: 100%;
+    background-color: rgba(variables.$background-color-accent, 0.89);
+  }
+}
+
+.juri-card__image-wrapper {
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
 }
 
-.juri-card__info {
-  position: absolute;
-  z-index: 1;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background-color: rgba(variables.$background-color-accent, 0.89);
-  box-shadow: 0 0 35px 0 variables.$shadow-color-primary;
+.juri-card__image {
+  display: block;
+  object-fit: cover;
 }
 
-.juri-card__achievements {
+.juri-card__details {
+  padding: 42px 20px 20px 10px;
+  place-self: end center;
+  display: grid;
+  grid-template-rows: min-content;
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
+  color: variables.$font-color-secondary;
+}
+
+.juri-card__title {
+  @include mixins.font-info(variables.$font-primary, 22px, 22px);
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  z-index: 2;
+}
+
+.juri-card__info {
+  display: none;
+  place-self: start center;
+  z-index: 1;
+}
+
+.juri-card__sport {
+  margin: 0 0 28px;
+  padding: 0;
+  text-align: center;
+  color: variables.$font-color-tertiary;
+}
+
+.juri-card__achievement-list {
   @include mixins.list-base();
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: 0 0 0 16px;
+}
+
+.juri-card__achievement-item {
+  @include mixins.font-info(variables.$font-primary, 14px, 22px);
+  position: relative;
+  padding: 0 0 0 16px;
+
+  &:before {
+    content: "";
+    width: 6px;
+    height: 6px;
+    left: 0;
+    top: 7px;
+    position: absolute;
+    background-color: variables.$font-color-secondary;
+    border-radius: 50%;
+  }
 }
