@@ -7,43 +7,49 @@
   align-items: center;
   justify-content: center;
   padding: 0 15px;
-}
 
-.feature-card__title {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin: 0;
-}
+  & dl {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+  }
 
-.feature-card__value {
-  @include mixins.font-info(variables.$font-primary, 64px, 64px, 700);
-  background: linear-gradient(128deg, variables.$button-color-tab-state 0%, variables.$font-color-alternate 45.58%);
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
+  & dt {
+    @include mixins.font-info(variables.$font-primary, 64px, 64px, 700);
+    padding: 0;
+    margin: 0;
+    background: linear-gradient(128deg, variables.$button-color-tab-state 0%, variables.$font-color-alternate 45.58%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
 
-.feature-card__unit {
-  @include mixins.font-info(variables.$font-primary, 14px, 20px);
-  color: variables.$font-color-accent-alternate;
-}
+  & dd {
+    @include mixins.font-info(variables.$font-primary, 14px, 20px);
+    color: variables.$font-color-accent-alternate;
+    padding: 0;
+    margin: 0;
+  }
 
-.feature-card__description {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin: 0;
-}
+  & div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+  }
 
-.feature-card__advantage {
-  @include mixins.font-info(variables.$font-primary, 18px, 20px);
-  margin-bottom: 12px;
-}
+  & h3 {
+    @include mixins.font-info(variables.$font-primary, 18px, 20px);
+    margin-bottom: 12px;
+  }
 
-.feature-card__description {
-  @include mixins.font-info(variables.$font-primary, 14px, 22px, 300);
-  text-align: center;
+  & p {
+    @include mixins.font-info(variables.$font-primary, 14px, 22px, 300);
+    text-align: center;
+    margin: 0;
+  }
 }
 
 .feature-card--special {
@@ -52,13 +58,14 @@
   width: 100%;
   padding: 40px 40px 41px;
 
-  & .feature-card__value {
+  & dt {
     color: inherit;
     -webkit-text-fill-color: variables.$font-color-secondary;
   }
 
-  & .feature-card__advantage {
+  & dd {
     @include mixins.font-info(variables.$font-primary, 22px, 22px, 700);
+    color: inherit;
     margin-bottom: 20px;
   }
 }

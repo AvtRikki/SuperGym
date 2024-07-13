@@ -1,6 +1,83 @@
 @use "../common/variables.scss";
 @use "../common/mixins.scss";
 
+.offers {
+  padding: 40px 0;
+}
+
+.offers__title {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
 .offers__list {
   @include mixins.list-base;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 30px;
+}
+
+.offers__item {
+  border: 7px solid;
+  border-image: variables.$button-color-alternate 30;
+  margin: 0 15px;
+  padding: 20px;
+
+  & h3 {
+    @include mixins.font-info(variables.$font-primary, 22px, 22px, 700);
+    margin: 0;
+    padding: 0;
+    text-align: center;
+  }
+
+  & span {
+    @include mixins.font-info(variables.$font-primary, 64px, 64px, 700);
+    display: block;
+    margin-top: 9px;
+    text-align: center;
+  }
+
+  & p {
+    @include mixins.font-info(variables.$font-primary, 16px, 20px, 300);
+    margin: 0;
+    text-align: center;
+  }
+
+  & img {
+    display: block;
+    width: 100%;
+    object-fit: cover;
+  }
+
+  & a {
+    @include mixins.font-info(variables.$font-primary, 14px, 14px, 700);
+    display: inline-block;
+    color: inherit;
+    text-transform: uppercase;
+    text-underline-offset: 5px;
+  }
+
+  & .offers__item-description {
+    padding: 0;
+  }
+}
+
+.offers__item--special {
+  color: variables.$font-color-secondary;
+  background-color: variables.$background-color-banner;
+  border: none;
+  margin: 0 0 10px;
+  padding: 0;
+
+  & .offers__item-description {
+    padding: 30px;
+  }
+}
+
+.offers__item-description {
+  display: flex;
+  gap: 28px;
+  flex-direction: column;
+  align-items: center;
 }

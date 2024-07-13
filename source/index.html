@@ -43,10 +43,9 @@
       </section>
     </div>
     <section class="section about" data-test="about">
-      <h2 class="visually-hidden">Информация о тренажерном зале</h2>
-      <p class="section__title about__title">Тренажёрный зал</p>
-      <p class="about__additional-info">Просторный зал площадью 900 кв/м</p>
-      <p class="about__description">Supergym – самый большой фитнес центр за Уралом и идеальное место для укрепления тела и здоровья. Тренажёрный зал оснащён всем необходимым современным оборудованием для всех спортсменов.</p>
+      <h2 class="section__title about__title">Тренажёрный зал</h2>
+      <strong class="about__additional-info">Просторный зал площадью 900 кв/м</strong>
+      <p>Supergym – самый большой фитнес центр за Уралом и идеальное место для укрепления тела и здоровья. Тренажёрный зал оснащён всем необходимым современным оборудованием для всех спортсменов.</p>
       <picture>
         <source type="image/webp" media="(min-width: 1366px)"
           srcset="img/about/about-desktop@1x.webp 1x, img/about/about-desktop@2x.webp 2x" width="660" height="400">
@@ -406,53 +405,53 @@
       <h2 class="section__title features__title">Наши преимущества</h2>
       <ul class="features__list">
         <li class="features__item feature-card">
-          <p class="feature-card__title">
-            <span class="feature-card__value">900</span>
-            <span class="feature-card__unit">кв/м</span>
-          </p>
-          <p class="feature-card__description">
-            <span class="feature-card__advantage">Площадь</span>
-            <span class="feature-card__description">Занимайтесь без очередей и толкучки</span>
-          </p>
+          <dl>
+            <dt>900</dt>
+            <dd>кв/м</dd>
+          </dl>
+          <div>
+            <h3>Площадь</h3>
+            <p>Занимайтесь без очередей и толкучки</p>
+          </div>
         </li>
         <li class="features__item feature-card">
-          <p class="feature-card__title">
-            <span class="feature-card__value">70</span>
-            <span class="feature-card__unit">машин</span>
-          </p>
-          <p class="feature-card__description">
-            <span class="feature-card__advantage">Собственная парковка</span>
-            <span class="feature-card__description">Вы всегда найдёте место для своей машины&nbsp;на нашей парковке</span>
-          </p>
+          <dl>
+            <dt>70</dt>
+            <dd>машин</dd>
+          </dl>
+          <div>
+            <h3>Собственная парковка</h3>
+            <p>Вы всегда найдёте место для своей машины&nbsp;на нашей парковке</p>
+          </div>
         </li>
         <li class="features__item feature-card feature-card--special">
-          <p class="feature-card__title">
-            <span class="feature-card__value">100</span>
-          </p>
-          <p class="feature-card__description">
-            <span class="feature-card__advantage">Тренажёров</span>
-            <span class="feature-card__description">Современные тренажёры на&nbsp;все&nbsp;группы&nbsp;мышц</span>
-          </p>
+          <dl>
+            <dt>100</dt>
+            <dd>Тренажёров</dd>
+          </dl>
+          <div>
+            <p>Современные тренажёры на&nbsp;все&nbsp;группы&nbsp;мышц</p>
+          </div>
         </li>
         <li class="features__item feature-card">
-          <p class="feature-card__title">
-            <span class="feature-card__value">350</span>
-            <span class="feature-card__unit">мест</span>
-          </p>
-          <p class="feature-card__description">
-            <span class="feature-card__advantage">Комфорт</span>
-            <span class="feature-card__description">Просторные раздевалки, душевые, фен, Wi-Fi, кулеры</span>
-          </p>
+          <dl>
+            <dt>350</dt>
+            <dd>мест</dd>
+          </dl>
+          <div>
+            <h3>Комфорт</h3>
+            <p>Просторные раздевалки, душевые, фен, Wi-Fi, кулеры</p>
+          </div>
         </li>
         <li class="features__item feature-card">
-          <p class="feature-card__title">
-            <span class="feature-card__value">5+</span>
-            <span class="feature-card__unit">лет</span>
-          </p>
-          <p class="feature-card__description">
-            <span class="feature-card__advantage">Тренерский опыт</span>
-            <span class="feature-card__description">Добивайтесь своих целей быстрее с профессиональным тренером</span>
-          </p>
+          <dl>
+            <dt>5+</dt>
+            <dd>лет</dd>
+          </dl>
+          <div>
+            <h3>Тренерский опыт</h3>
+            <p>Добивайтесь своих целей быстрее с профессиональным тренером</p>
+          </div>
         </li>
       </ul>
     </section>
@@ -460,13 +459,15 @@
       <h2 class="section__title offers__title">Акции</h2>
       <ul class="offers__list">
         <li class="offers__item offers__item--special">
-          <div class="offer-card">
-            <p class="offer-card__title">Год</p>
-            <p class="offer-card__price">4999</p>
-            <p class="offer-card__description">Безлимитный абонемент в тренажёрный зал</p>
-            <a class="offer-card__learn-more" href="#">Подробнее</a>
+          <div class="offers__item-description">
+            <h3>
+              Год
+              <span>4999</span>
+            </h3>
+            <p>Безлимитный абонемент в тренажёрный зал</p>
+            <a href="#">Подробнее</a>
           </div>
-          <div class="offer-image">
+          <div class="offers__item-image">
             <picture>
               <source type="image/webp" media="(min-width: 1366px)"
                 srcset="img/offer/offer-desktop@1x.webp 1x, img/offer/offer-desktop@2x.webp 2x" width="280" height="460">
@@ -478,23 +479,23 @@
                 srcset="img/offer/offer-desktop@1x.jpg 1x, img/offer/offer-desktop@2x.jpg 2x" width="280" height="460">
               <source type="image/jpeg" media="(min-width: 768px)" srcset="img/offer/offer-tablet@1x.jpg 1x, img/offer/offer-tablet@2x.jpg 2x" width="400"
                 height="462">
-              <img class="offer-image__content" src="img/offer/offer-mobile@1x.jpg" srcset="img/offer/offer-mobile@2x.jpg 2x" width="320"
+              <img src="img/offer/offer-mobile@1x.jpg" srcset="img/offer/offer-mobile@2x.jpg 2x" width="320"
                 height="360" alt="Девушка в спортивной форме">
             </picture>
           </div>
         </li>
         <li class="offers__item">
-          <div class="offer-card">
-            <p class="offer-card__title">Месяц бесплатно</p>
-            <p class="offer-card__description">Приведи друга, получи абонемент в подарок</p>
-            <a class="offer-card__learn-more" href="#">Подробнее</a>
+          <div class="offers__item-description">
+            <h3>Месяц бесплатно</h3>
+            <p>Приведи друга, получи абонемент в подарок</p>
+            <a href="#">Подробнее</a>
           </div>
         </li>
         <li class="offers__item">
-          <div class="offer-card">
-            <p class="offer-card__title">Скидка 20%</p>
-            <p class="offer-card__description">Корпоративный фитнес с командой</p>
-            <a class="offer-card__learn-more" href="#">Подробнее</a>
+          <div class="offers__item-description">
+            <h3>Скидка 20%</h3>
+            <p>Корпоративный фитнес с командой</p>
+            <a href="#">Подробнее</a>
           </div>
         </li>
       </ul>
