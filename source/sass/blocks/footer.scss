@@ -1,0 +1,34 @@
+@use "../common/variables.scss";
+@use "../common/mixins.scss";
+
+.footer {
+  color: variables.$font-color-secondary;
+  background-color: variables.$background-color-tertiary;
+  padding: 40px 15px;
+}
+
+.footer__logo {
+  display: block;
+  text-decoration: none;
+  margin-bottom: 30px;
+}
+
+.footer__image {
+  display: block;
+}
+
+.footer__social-list {
+  @include mixins.list-base();
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.footer__social-link {
+  display: block;
+  color: variables.$background-color-tertiary;;
+  background-color: variables.$background-color-primary;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+}

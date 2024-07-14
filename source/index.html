@@ -645,7 +645,7 @@
       <h2 class="section__title reviews__title">Отзывы</h2>
       <div class="reviews__wrapper">
         <ul class="reviews__list">
-          <li class="reviews__item review-card">
+          <li class="reviews__item reviews__item--active">
             <picture>
               <source type="image/webp" media="(min-width: 768px)"
                 srcset="img/review/review-tablet@1x.webp 1x, img/review/review-tablet@2x.webp 2x" width="80" height="80">
@@ -653,15 +653,15 @@
                 srcset="img/review/review-mobile@1x.webp 1x, img/review/review-mobile@2x.webp 2x" width="68" height="68">
               <source type="image/png" media="(min-width: 768px)" srcset="img/review/review-tablet@1x.png 1x, img/review/review-tablet@2x.png 2x" width="80"
                 height="80">
-              <img class="review-card__image" src="img/review/review-mobile@1x.png" srcset="img/review/review-mobile@2x.png 2x" width="68"
+              <img src="img/review/review-mobile@1x.png" srcset="img/review/review-mobile@2x.png 2x" width="68"
                 height="68" alt="Клиентка Анна Орлова.">
             </picture>
-            <h3 class="review-card__title">Анна Орлова</h3>
-            <p class="review-card__description">
+            <h3>Анна Орлова</h3>
+            <p>
               «Хожу в Supergym уже больше года. Нравится, что в клубе всегда чисто, тренажёры обновляют, персонал дружелюбный. Зал просторный, даже в вечернее время нет очередей»
             </p>
           </li>
-          <li class="reviews__item review-card">
+          <li class="reviews__item">
             <picture>
               <source type="image/webp" media="(min-width: 768px)"
                 srcset="img/review/review-tablet@1x.webp 1x, img/review/review-tablet@2x.webp 2x" width="80" height="80">
@@ -669,73 +669,73 @@
                 srcset="img/review/review-mobile@1x.webp 1x, img/review/review-mobile@2x.webp 2x" width="68" height="68">
               <source type="image/png" media="(min-width: 768px)" srcset="img/review/review-tablet@1x.png 1x, img/review/review-tablet@2x.png 2x" width="80"
                 height="80">
-              <img class="review-card__image" src="img/review/review-mobile@1x.png" srcset="img/review/review-mobile@2x.png 2x" width="68"
+              <img src="img/review/review-mobile@1x.png" srcset="img/review/review-mobile@2x.png 2x" width="68"
                 height="68" alt="Клиентка Анна Орлова.">
             </picture>
-            <h3 class="review-card__title">Анна Орлова</h3>
-            <p class="review-card__description">
+            <h3>Анна Орлова</h3>
+            <p>
               «Хожу в Supergym уже больше года. Нравится, что в клубе всегда чисто, тренажёры обновляют, персонал дружелюбный. Зал просторный, даже в вечернее время нет очередей»
             </p>
           </li>
         </ul>
-        <button class="reviews__button reviews__button--prev" type="button">
-          <span class="visually-hidden">Предыдущий отзыв.</span>
-        </button>
-        <button class="reviews__button reviews__button--next" type="button">
-          <span class="visually-hidden">Следующий отзыв.</span>
-        </button>
+        <div class="reviews__controls">
+          <button class="reviews__button reviews__button--prev" type="button">
+            <span class="visually-hidden">Предыдущий отзыв.</span>
+          </button>
+          <button class="reviews__button reviews__button--next" type="button">
+            <span class="visually-hidden">Следующий отзыв.</span>
+          </button>
+        </div>
       </div>
     </section>
     <section class="section form" data-test="form">
       <h2 class="section__title form__title">Бесплатное занятие</h2>
-      <form class="form__subscribtion"  id="subscribtion-form" action="https://echo.htmlacademy.ru/" method="post">
-        <label class="form__subscribtion-input-label">
+      <form class="form__subscription"  id="subscription-form" action="https://echo.htmlacademy.ru/" method="post">
+        <label class="form__input-label">
           <input type="text" name="name" id="name" required pattern="[a-zA-Z\u0400-\u04ff\-\s]{1,}" minlength="1"
             placeholder="Имя" title="В поле Имя допускается ввод только букв и пробелов.">
           <span>Имя</span>
         </label>
-        <label class="form__subscribtion-input-label">
+        <label class="form__input-label">
           <input type="tel" name="phone" id="phone" placeholder="Телефон" required pattern="[+]?[0-9\-\(\)]+"
             title="В Поле Телефон допускается ввод только цифр и спец символов.">
           <span>Телефон</span>
         </label>
-        <button class="button" type="submit">Отправить</button>
+        <button class="form__input-button button button__primary" type="submit">Отправить</button>
       </form>
     </section>
     <section class="section contacts" data-test="contacts">
       <h2 class="section__title contacts__title">Контакты</h2>
       <ul class="contacts__list">
-        <li class="contacts__item contacts-card">
-          <p class="contacts-card__title">Адрес:</p>
-          <address class="contacts-card__info">г. Омск, ул. 60 лет Октября, 7</address>
+        <li class="contacts__item">
+          <p class="contacts__item-title">Адрес:</p>
+          <address class="contacts__item-info">г. Омск, ул. 60 лет Октября, 7</address>
         </li>
         <li class="contacts__item">
-          <p class="contacts-card__title">График работы:</p>
-          <p class="contacts-card__info">Пн-Вс: с 8:00 до 22:00</p>
+          <p class="contacts__item-title">График работы:</p>
+          <p class="contacts__item-info">Пн-Вс: с 8:00 до 22:00</p>
         </li>
         <li class="contacts__item">
-          <p class="contacts-card__title">Телефон:</p>
-          <a class="contacts-card__info" href="tel:88005555555">8-800-555-55-55</a>
+          <p class="contacts__item-title">Телефон:</p>
+          <a class="contacts__item-info" href="tel:88005555555">8-800-555-55-55</a>
         </li>
         <li class="contacts__item">
-          <p class="contacts-card__title">Email:</p>
-          <a class="contacts-card__info" href="mailto:omsk@supergym.ru">omsk@supergym.ru</a>
+          <p class="contacts__item-title">Email:</p>
+          <a class="contacts__item-info" href="mailto:omsk@supergym.ru">omsk@supergym.ru</a>
         </li>
       </ul>
     </section>
     <footer class="footer" data-test="footer">
       <nav class="footer__navigation navigation">
         <h2 class="visually-hidden">Навигация</h2>
+        <a class="footer__logo" href="index.html">
+          <picture>
+            <source type="image/svg+xml" media="(min-width: 1366px)" srcset="/__spritemap#sprite-logo-title-view" width="130" height="26">
+            <source type="image/svg+xml" media="(min-width: 768px)" srcset="/__spritemap#sprite-logo-title-view" width="110" height="22">
+            <img class="footer__image" src="/__spritemap#sprite-logo-title-view" width="100" height="20" alt="Логотип Фитнес центра «Supergym»">
+          </picture>
+        </a>
         <ul class="navigation__list">
-          <li class="navigation__logo">
-            <a class="footer__logo" href="index.html">
-              <picture>
-                <source type="image/svg+xml" media="(min-width: 1366px)" srcset="/__spritemap#sprite-logo-title-view" width="130" height="26">
-                <source type="image/svg+xml" media="(min-width: 768px)" srcset="/__spritemap#sprite-logo-title-view" width="110" height="22">
-                <img class="footer__image" src="/__spritemap#sprite-logo-title-view" width="100" height="20" alt="Логотип Фитнес центра «Supergym»">
-              </picture>
-            </a>
-          </li>
           <li class="navigation__item">
             <a class="navigation__link" href="#">Услуги</a>
           </li>
@@ -755,26 +755,35 @@
       </nav>
       <div class="footer__social">
         <h2 class="visually-hidden">Мы в соцсетях</h2>
-        <ul class="footer__social-list social">
-          <li class="social__item">
-            <a class="social__link" href="#">
+        <ul class="footer__social-list">
+          <li class="footer__social-item">
+            <a class="footer__social-link" href="#">
               <span class="visually-hidden">
                 Мы Вконтакте
               </span>
+              <svg width="25" height="25">
+                <use href="/__spritemap#sprite-social-vk-icon"></use>
+              </svg>
             </a>
           </li>
-          <li class="social__item">
-            <a class="social__link" href="#">
+          <li class="footer__social-item">
+            <a class="footer__social-link" href="#">
               <span class="visually-hidden">
                 Мы Одноклассниках
               </span>
+              <svg width="25" height="25">
+                <use href="/__spritemap#sprite-social-ok-icon"></use>
+              </svg>
             </a>
           </li>
-          <li class="social__item">
-            <a class="social__link" href="#">
+          <li class="footer__social-item">
+            <a class="footer__social-link" href="#">
               <span class="visually-hidden">
                 Мы на Реддите
               </span>
+              <svg width="25" height="25">
+                <use href="/__spritemap#sprite-social-reddit-icon"></use>
+              </svg>
             </a>
           </li>
         </ul>

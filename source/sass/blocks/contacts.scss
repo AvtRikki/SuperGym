@@ -1,0 +1,30 @@
+@use "../common/variables.scss";
+@use "../common/mixins.scss";
+
+.contacts {
+  padding: 40px 15px;
+}
+
+.contacts__title {
+  margin-bottom: 42px;
+}
+
+.contacts__list {
+  @include mixins.list-base();
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+}
+
+.contacts__item-title {
+  @include mixins.font-info(variables.$font-primary, 20px, 20px);
+  color: inherit;
+  margin: 0 0 12px;
+}
+
+.contacts__item-info {
+  @include mixins.font-info(variables.$font-primary, 14px, 20px);
+  text-decoration: none;
+  color: inherit;
+  margin: 0;
+}

@@ -1,0 +1,39 @@
+@use "../common/variables.scss";
+@use "../common/mixins.scss";
+
+.form {
+  padding: 70px 15px;
+  background-color: variables.$background-color-accent;
+}
+
+.form__title {
+  color: variables.$font-color-secondary;
+  margin-bottom: 36px;
+}
+
+.form__subscription {
+  display: flex;
+  flex-direction: column;
+  gap: 36px;
+}
+
+.form__input-label {
+  display: block;
+  width: 100%;
+
+  & input {
+    @include mixins.font-info(variables.$font-primary, 14px, 22px, 300);
+    padding: 10px 0 4px;
+    width: 100%;
+    color: variables.$font-color-secondary;
+    background-color: variables.$background-color-transparent;
+    border: 0;
+    border-bottom: 1px solid variables.$background-color-primary;
+  }
+}
+
+.form__input-button {
+  @include mixins.font-info(variables.$font-primary, 12px, 12px, 700);
+  text-transform: uppercase;
+  background-color: variables.$background-color-transparent;
+}
