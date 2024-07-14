@@ -1,0 +1,69 @@
+@use "../common/variables.scss";
+@use "../common/mixins.scss";
+
+.faq {
+  padding: 70px 15px;
+  background-color: variables.$background-color-secondary;
+}
+
+.faq__title {
+  text-align: center;
+  margin-bottom: 35px;
+}
+
+.faq__wrapper {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 35px;
+  max-width: 100%;
+  overflow: hidden;
+}
+
+.faq__page-list {
+  @include mixins.list-base();
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+
+.faq__page-item {
+  width: 100%;
+  text-align: center;
+  padding: 14px 22px;
+  border: 1px solid variables.$border-color-primary;
+}
+
+.faq__page-link {
+  @include mixins.font-info(variables.$font-primary, 16px, 16px);
+  text-decoration: none;
+  color: inherit;
+}
+
+.faq__page-item--active {
+  color: variables.$font-color-secondary;
+  background: linear-gradient(120deg, #ed0233 17.6%, #003eb7 95.31%);
+}
+
+.faq__page-content-wrapper {
+  position: relative;
+  transition: height .5s;
+  margin-bottom: 0;
+}
+
+.faq__page-content-list {
+  @include mixins.list-base();
+  display: none;
+  width: 100%;
+}
+
+.faq__page-content-list--active {
+  display: block;
+}
+
+.faq__page-content-item {
+  border-top: 1px solid variables.$border-color-primary;
+
+  &:last-child {
+    border-bottom: 1px solid variables.$border-color-primary;
+  }
+}

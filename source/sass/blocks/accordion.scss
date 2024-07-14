@@ -1,0 +1,76 @@
+@use "../common/variables.scss";
+@use "../common/mixins.scss";
+
+.accordion {
+  margin: 0 auto;
+}
+
+.accordion__item {
+  position: relative;
+  & button {
+    @include mixins.font-info(variables.$font-primary, 20px, 20px);
+    width: 100%;
+    text-align: left;
+    border: none;
+    color: inherit;
+    background: none;
+    padding: 21px 52px 20px 0;
+  }
+
+  & p {
+    @include mixins.font-info(variables.$font-primary, 16px, 20px, 300);
+    display: none;
+    margin: 0 0 21px;
+  }
+}
+
+.accordion__item-decoration {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  top: 25px;
+  right: 0;
+  border-radius: 50%;
+  background-color: variables.$background-color-transparent;
+  border: 1px solid variables.$button-color-secondary;
+
+  &:before {
+    content: "";
+    position: absolute;
+    height: 1px;
+    width: 14px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-color: variables.$button-color-secondary;
+  }
+
+  &:after {
+    content: "";
+    position: absolute;
+    height: 14px;
+    width: 1px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-color: variables.$button-color-secondary;
+  }
+}
+
+.accordion__item--expanded {
+  & p {
+    display: block;
+  }
+
+  & .accordion__item-decoration {
+    background-color: variables.$button-color-secondary;
+  }
+
+  & .accordion__item-decoration:before {
+    background-color: variables.$background-color-primary;
+  }
+
+  & .accordion__item-decoration:after {
+    background-color: variables.$background-color-transparent;
+  }
+}
