@@ -1,26 +1,26 @@
 @use "../common/variables.scss";
 @use "../common/mixins.scss";
 
-$about-text-padding: 0 15px;
+$about-text-padding-mobile: 0 15px;
 
 .about {
   padding: 40px 0;
 
   & p {
     @include mixins.font-info(variables.$font-primary, 14px, 22px, 300);
-    padding: $about-text-padding;
+    padding: $about-text-padding-mobile;
     margin: 0 0 36px;
   }
 }
 
 .about__title {
-  padding: $about-text-padding;
+  padding: $about-text-padding-mobile;
   margin-bottom: 12px;
 }
 
 .about__additional-info {
   @include mixins.font-info(variables.$font-primary, 18px, 20px);
-  padding: $about-text-padding;
+  padding: $about-text-padding-mobile;
   margin-bottom: 36px;
 }
 
