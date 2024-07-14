@@ -1,12 +1,19 @@
 @use "../common/variables.scss";
 @use "../common/mixins.scss";
 
+.subscription {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 1;
+}
+
+
 .subscription__tabs {
   @include mixins.list-base;
   display: flex;
-  justify-content: space-between;
   position: relative;
-  margin-bottom: 30px;
+  justify-content: center;
 
   &::after {
     width: 100%;
@@ -17,14 +24,31 @@
     left: 0;
     background-color: variables.$border-color-primary;
   }
+
+  @include mixins.mobile {
+    gap: 45px;
+    margin-bottom: 30px;
+  }
+
+  @include mixins.tablet {
+    gap: 43px;
+    margin-bottom: 45px;
+  }
 }
 
 .subscription__tab-button {
-  @include mixins.font-info(variables.$font-primary, 16px, 16px);
   background-color: variables.$background-color-transparent;
   border: none;
   margin-bottom: 10px;
   padding: 0;
+
+  @include mixins.mobile {
+    @include mixins.font-info(variables.$font-primary, 16px, 16px);
+  }
+
+  @include mixins.tablet {
+    @include mixins.font-info(variables.$font-primary, 18px, 18px);
+  }
 }
 
 .subscription__tab .subscription__tab-button {
