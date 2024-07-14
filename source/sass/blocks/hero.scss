@@ -6,9 +6,16 @@
 }
 
 .hero__header {
-  padding: 16px 15px;
   display: flex;
   justify-content: space-between;
+
+  @include mixins.mobile {
+    padding: 16px 15px;
+  }
+
+  @include mixins.tablet {
+    padding: 31px 45px;
+  }
 }
 
 .hero__header-image {
@@ -16,56 +23,125 @@
 }
 
 .hero__header-contacts {
-  @include mixins.font-info(variables.$font-primary, 22px, 22px, 700);
   text-decoration: none;
   color: variables.$font-color-secondary;
-}
 
-.hero__image {
   @include mixins.mobile {
-    display: none;
+    @include mixins.font-info(variables.$font-primary, 22px, 22px, 700);
+  }
+
+  @include mixins.tablet {
+    @include mixins.font-info(variables.$font-primary, 24px, 24px, 700);
   }
 }
 
+.hero__image-wrapper {
+  @include mixins.mobile {
+    display: none;
+  }
+
+  @include mixins.tablet {
+    display: block;
+    grid-column: 6/7;
+  }
+}
+
+.hero__image {
+  display: block;
+  object-fit: cover;
+  width: 100%;
+}
+
 .hero__info {
-  padding: 48px 15px 32px 15px;
   display: grid;
-  grid-template-columns: auto 290px;
+
+  @include mixins.mobile {
+    grid-template-columns: auto 290px;
+    padding: 48px 15px 32px 15px;
+  }
+
+  @include mixins.tablet {
+    grid-template-columns: auto min-content 26px 185px 30px 324px;
+    grid-template-rows: 30px min-content min-content min-content 30px;
+    padding: 0 45px 100px 45px;
+  }
 }
 
 .hero__additional-info {
   font-family: variables.$font-secondary;
   order: -1;
   color: variables.$font-color-secondary;
-  grid-column: 2 / 3;
   grid-row: 1 / 2;
   place-self: start end;
+
+  @include mixins.mobile {
+    grid-column: 2 / 3;
+  }
+
+  @include mixins.tablet {
+    @include mixins.font-info(variables.$font-secondary, 42px, 42px, 600);
+    grid-column: 4 / 5;
+    grid-row: 2 / 3;
+  }
 }
 
 .hero__title {
-  @include mixins.font-info(variables.$font-secondary, 62px, 62px, 800);
   margin: 0;
   padding: 0;
   color: variables.$font-color-secondary;
-  grid-column: 2 / 3;
-  grid-row: 2 / 3;
+  text-transform: uppercase;
   place-self: end;
   text-align: end;
   max-width: 250px;
+
+  @include mixins.mobile {
+    @include mixins.font-info(variables.$font-secondary, 62px, 62px, 800);
+    letter-spacing: 0.02em;
+    grid-row: 2 / 3;
+    grid-column: 2 / 3;
+  }
+
+  @include mixins.tablet {
+    @include mixins.font-info(variables.$font-secondary, 72px, 85px, 800);
+    letter-spacing: 0.03em;
+    grid-column: 4 / 5;
+    grid-row: 3 / 4;
+  }
 }
 
 .hero__description {
-  @include mixins.font-info(variables.$font-primary, 14px, 20px);
+
   color: variables.$font-color-secondary;
   margin: 0;
   padding: 0;
-  grid-row: 2 / 3;
-  grid-column: 2 / 3;
   place-self: end start;
   max-width: 140px;
+
+  @include mixins.mobile {
+    @include mixins.font-info(variables.$font-primary, 14px, 20px);
+    grid-row: 2 / 3;
+    grid-column: 2 / 3;
+  }
+
+  @include mixins.tablet {
+    @include mixins.font-info(variables.$font-primary, 14px, 22px);
+    grid-row: 3 / 4;
+    grid-column: 2 / 3;
+    margin-bottom: 20px;
+  }
 }
 
 .hero__action {
-  grid-column: 1 / 3;
-  margin-top: 48px;
+  @include mixins.font-info(variables.$font-primary, 12px, 12px, 700);
+  text-transform: uppercase;
+
+  @include mixins.mobile {
+    grid-column: 1 / 3;
+    margin-top: 48px;
+  }
+
+  @include mixins.tablet {
+    grid-column: 4 / 5;
+    margin-top: 50px;
+  }
 }
