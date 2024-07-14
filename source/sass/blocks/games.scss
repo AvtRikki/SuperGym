@@ -2,8 +2,17 @@
 @use "../common/mixins.scss";
 
 .games {
-  padding: 25px 15px;
   color: variables.$font-color-secondary;
+
+  @include mixins.mobile {
+    padding: 25px 15px;
+  }
+
+  @include mixins.tablet {
+    padding: 60px 45px;
+    display: grid;
+    grid-template-columns: 300px 1fr;
+  }
 }
 
 .games__wrapper {
@@ -12,16 +21,40 @@
   grid-template-columns: 1fr min-content;
   grid-column-gap: 17px;
   padding: 40px;
+
+  @include mixins.tablet {
+    grid-column: 1/ 2;
+    grid-row: 1 / 2;
+  }
+}
+
+.games__picture-wrapper {
+  @include mixins.tablet {
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+  }
 }
 
 .games__title {
   @include mixins.font-info(variables.$font-secondary, 48px, 54px, 600);
+  text-transform: uppercase;
+}
+
+.games__date-time {
+  margin: 0;
 }
 
 .games__time--title,
 .games__date--title {
-  @include mixins.font-info(variables.$font-primary, 16px, 20px, 300);
   margin-bottom: 3px;
+
+  @include mixins.mobile {
+    @include mixins.font-info(variables.$font-primary, 16px, 20px, 300);
+  }
+
+  @include mixins.tablet {
+    @include mixins.font-info(variables.$font-primary, 18px, 24px, 300);
+  }
 }
 
 .games__time--value,
@@ -30,6 +63,7 @@
   margin: 0;
   padding-top: 2px;
   display: flex;
+  align-items: center;
 
   &::after {
     width: 100%;
@@ -45,16 +79,36 @@
 .games__time--hours,
 .games__date--day {
   @include mixins.font-info(variables.$font-primary, 24px, 24px, 700);
-  margin-right: 3px;
+
+  @include mixins.mobile {
+    margin-right: 3px;
+  }
+
+  @include mixins.tablet {
+    margin-right: 5px;
+  }
 }
 
 .games__date--month-year {
-  @include mixins.font-info(variables.$font-primary, 12px, 12px);
+  @include mixins.mobile {
+    @include mixins.font-info(variables.$font-primary, 12px, 12px);
+  }
+
+  @include mixins.tablet {
+    @include mixins.font-info(variables.$font-primary, 14px, 22px);
+  }
 }
 
 .games__description {
-  @include mixins.font-info(variables.$font-primary, 16px, 20px, 300);
   grid-column: 1/-1;
+
+  @include mixins.mobile {
+    @include mixins.font-info(variables.$font-primary, 16px, 20px, 300);
+  }
+
+  @include mixins.tablet {
+    @include mixins.font-info(variables.$font-primary, 18px, 24px, 300);
+  }
 }
 
 .games__action {
