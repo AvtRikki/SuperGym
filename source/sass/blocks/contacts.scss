@@ -2,29 +2,85 @@
 @use "../common/mixins.scss";
 
 .contacts {
-  padding: 40px 15px;
+  @include mixins.mobile {
+    padding: 40px 15px;
+  }
+
+  @include mixins.tablet {
+    padding: 60px 45px;
+  }
 }
 
 .contacts__title {
   margin-bottom: 42px;
+
+  @include mixins.tablet {
+    @include mixins.font-info(variables.$font-secondary, 54px, 54px, 600);
+  }
 }
 
 .contacts__list {
   @include mixins.list-base();
-  display: flex;
-  flex-direction: column;
-  gap: 28px;
+  position: relative;
+
+  @include mixins.mobile {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 28px;
+  }
+
+  @include mixins.tablet {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 60px;
+    row-gap: 15px;
+    margin: 0 auto;
+
+    &:after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      width: 1px;
+      height: 100%;
+      background: variables.$border-color-secondary;
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
+}
+
+.contacts__item:nth-child(2n) {
+  @include mixins.tablet {
+    grid-row: 2/3;
+  }
 }
 
 .contacts__item-title {
-  @include mixins.font-info(variables.$font-primary, 20px, 20px);
   color: inherit;
-  margin: 0 0 12px;
+
+  @include mixins.mobile {
+    @include mixins.font-info(variables.$font-primary, 20px, 20px);
+    margin: 0 0 12px;
+  }
+
+  @include mixins.tablet {
+    @include mixins.font-info(variables.$font-primary, 24px, 24px);
+    margin: 0 0 5px;
+  }
 }
 
 .contacts__item-info {
-  @include mixins.font-info(variables.$font-primary, 14px, 20px);
   text-decoration: none;
   color: inherit;
   margin: 0;
+
+  @include mixins.mobile {
+    @include mixins.font-info(variables.$font-primary, 14px, 20px);
+  }
+
+  @include mixins.tablet {
+    @include mixins.font-info(variables.$font-primary, 14px, 22px);
+  }
 }

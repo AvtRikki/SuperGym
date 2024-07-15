@@ -6,8 +6,16 @@
   display: flex;
   flex-wrap: wrap;
   row-gap: 20px;
-  column-gap: 35px;
-  margin-bottom: 30px;
+
+  @include mixins.mobile {
+    column-gap: 35px;
+    margin-bottom: 30px;
+  };
+
+  @include mixins.tablet {
+    column-gap: 30px;
+    margin-bottom: 0;
+  }
 }
 
 .navigation__link {
