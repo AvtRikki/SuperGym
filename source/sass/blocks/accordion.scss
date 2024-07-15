@@ -8,31 +8,59 @@
 .accordion__item {
   position: relative;
   & button {
-    @include mixins.font-info(variables.$font-primary, 20px, 20px);
     width: 100%;
     text-align: left;
     border: none;
     color: inherit;
     background: none;
-    padding: 21px 52px 20px 0;
+
+    @include mixins.mobile {
+      @include mixins.font-info(variables.$font-primary, 20px, 20px);
+      padding: 21px 52px 20px 0;
+    }
+
+    @include mixins.tablet {
+      @include mixins.font-info(variables.$font-primary, 22px, 22px);
+      padding: 32px 118px 32px 0;
+    }
   }
 
   & p {
     @include mixins.font-info(variables.$font-primary, 16px, 20px, 300);
     display: none;
     margin: 0 0 21px;
+
+    @include mixins.mobile {
+      @include mixins.font-info(variables.$font-primary, 16px, 20px, 300);
+      padding-right: 52px;
+    }
+
+    @include mixins.tablet {
+      @include mixins.font-info(variables.$font-primary, 18px, 24px, 300);
+      margin-top: -22px;
+      padding-right: 118px;
+    }
   }
 }
 
 .accordion__item-decoration {
   position: absolute;
-  width: 30px;
-  height: 30px;
-  top: 25px;
   right: 0;
   border-radius: 50%;
   background-color: variables.$background-color-transparent;
   border: 1px solid variables.$button-color-secondary;
+
+  @include mixins.mobile {
+    top: 25px;
+    width: 30px;
+    height: 30px;
+  }
+
+  @include mixins.tablet {
+    top: 23px;
+    width: 40px;
+    height: 40px;
+  }
 
   &:before {
     content: "";
