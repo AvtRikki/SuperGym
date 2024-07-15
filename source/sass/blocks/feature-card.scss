@@ -3,17 +3,33 @@
 
 .feature-card {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
   padding: 0 15px;
+  max-width: 324px;
+
+  @include mixins.mobile {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  @include mixins.tablet {
+    flex-direction: row;
+    gap: 10px;
+  }
 
   & dl {
     display: flex;
     flex-direction: column;
-    align-items: center;
     padding: 0;
     margin: 0;
+
+    @include mixins.mobile {
+      align-items: center;
+    }
+
+    @include mixins.tablet {
+      align-items: flex-start;
+    }
   }
 
   & dt {
@@ -36,19 +52,29 @@
   & div {
     display: flex;
     flex-direction: column;
-    align-items: center;
     margin: 0;
+
+    @include mixins.mobile {
+      align-items: center;
+    }
   }
 
   & h3 {
     @include mixins.font-info(variables.$font-primary, 18px, 20px);
-    margin-bottom: 12px;
+    margin: 0 0 12px;
   }
 
   & p {
     @include mixins.font-info(variables.$font-primary, 14px, 22px, 300);
-    text-align: center;
     margin: 0;
+
+    @include mixins.mobile {
+      text-align: center;
+    }
+
+    @include mixins.tablet {
+      text-align: left;
+    }
   }
 }
 
@@ -58,14 +84,37 @@
   width: 100%;
   padding: 40px 40px 41px;
 
+  @include mixins.tablet {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+  }
+
+  & dl {
+    @include mixins.tablet {
+      align-items: center;
+    }
+  }
+
   & dt {
     color: inherit;
     -webkit-text-fill-color: variables.$font-color-secondary;
+
+    @include mixins.tablet {
+      margin-bottom: 25px;
+    }
   }
 
   & dd {
     @include mixins.font-info(variables.$font-primary, 22px, 22px, 700);
     color: inherit;
     margin-bottom: 20px;
+  }
+
+  p {
+    @include mixins.tablet {
+      text-align: center;
+    }
   }
 }

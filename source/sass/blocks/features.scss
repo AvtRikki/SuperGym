@@ -2,21 +2,51 @@
 @use "../common/mixins.scss";
 
 .features {
-  padding: 40px 0;
   background-color: variables.$background-color-secondary;
+
+  @include mixins.mobile {
+    padding: 40px 0;
+  }
+
+  @include mixins.tablet {
+    padding: 60px 45px;
+  }
 }
 
 .features__title {
   padding: 0;
   text-align: center;
-  margin: 0 0 40px;
+
+
+  @include mixins.mobile {
+    margin: 0 0 40px;
+  }
+
+  @include mixins.tablet {
+    margin: 0 0 50px;
+  }
 }
 
 .features__list {
   @include mixins.list-base();
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 35px;
+  margin: 0 auto;
+
+  @include mixins.mobile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 35px;
+  }
+
+  @include mixins.tablet {
+    display: grid;
+    gap: 40px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr auto 1fr;
+  }
+}
+
+.features__item:nth-child(3n){
+  grid-column: 1 / 3;
 }
