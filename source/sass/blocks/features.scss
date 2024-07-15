@@ -41,7 +41,8 @@
 
   @include mixins.tablet {
     display: grid;
-    gap: 40px;
+    row-gap: 40px;
+    column-gap: 30px;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr auto 1fr;
   }

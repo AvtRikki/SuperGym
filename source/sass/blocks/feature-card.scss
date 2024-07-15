@@ -3,16 +3,17 @@
 
 .feature-card {
   display: flex;
-  padding: 0 15px;
   max-width: 324px;
 
   @include mixins.mobile {
+    padding: 0 15px;
     flex-direction: column;
     align-items: center;
     justify-content: center;
   }
 
   @include mixins.tablet {
+    padding: 0;
     flex-direction: row;
     gap: 10px;
   }
@@ -33,20 +34,34 @@
   }
 
   & dt {
-    @include mixins.font-info(variables.$font-primary, 64px, 64px, 700);
     padding: 0;
     margin: 0;
     background: linear-gradient(128deg, variables.$button-color-tab-state 0%, variables.$font-color-alternate 45.58%);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+
+    @include mixins.mobile {
+      @include mixins.font-info(variables.$font-primary, 64px, 64px, 700);
+    }
+
+    @include mixins.tablet {
+      @include mixins.font-info(variables.$font-primary, 70px, 70px, 700);
+    }
   }
 
   & dd {
-    @include mixins.font-info(variables.$font-primary, 14px, 20px);
     color: variables.$font-color-accent-alternate;
     padding: 0;
     margin: 0;
+
+    @include mixins.mobile {
+      @include mixins.font-info(variables.$font-primary, 14px, 20px);
+    }
+
+    @include mixins.tablet {
+      @include mixins.font-info(variables.$font-primary, 14px, 22px);
+    }
   }
 
   & div {
@@ -65,14 +80,15 @@
   }
 
   & p {
-    @include mixins.font-info(variables.$font-primary, 14px, 22px, 300);
     margin: 0;
 
     @include mixins.mobile {
+      @include mixins.font-info(variables.$font-primary, 14px, 22px, 300);
       text-align: center;
     }
 
     @include mixins.tablet {
+      @include mixins.font-info(variables.$font-primary, 16px, 24px, 300);
       text-align: left;
     }
   }
