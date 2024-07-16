@@ -18,3 +18,8 @@
   background-color: variables.$background-color-primary;
   color: variables.$font-color-primary;
 }
+
+.page__container {
+  max-width: 1920px;
+  margin: 0 auto;
+}
