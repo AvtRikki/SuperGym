@@ -34,6 +34,11 @@
     gap: 43px;
     margin-bottom: 45px;
   }
+
+  @include mixins.desktop {
+    gap: 50px;
+    margin-bottom: 40px;
+  }
 }
 
 .subscription__tab-button {
@@ -48,6 +53,10 @@
 
   @include mixins.tablet {
     @include mixins.font-info(variables.$font-primary, 18px, 18px);
+  }
+
+  @include mixins.desktop {
+    @include mixins.font-info(variables.$font-primary, 20px, 20px);
   }
 }
 
@@ -91,6 +100,11 @@
   display: flex;
   flex-direction: column;
   gap: 30px;
+
+  @include mixins.desktop {
+    flex-direction: row;
+    gap: 40px;
+  }
 }
 
 .subscription__card {

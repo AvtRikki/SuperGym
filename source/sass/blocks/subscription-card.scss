@@ -38,6 +38,10 @@
   @include mixins.tablet {
     @include mixins.font-info(variables.$font-primary, 24px, 24px, 700);
   }
+
+  @include mixins.desktop {
+    @include mixins.font-info(variables.$font-primary, 26px, 26px, 700);
+  }
 }
 
 .subscription-card__description {

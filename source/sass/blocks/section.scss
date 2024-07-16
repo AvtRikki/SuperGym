@@ -26,4 +26,9 @@
     @include mixins.font-info(variables.$font-secondary, 42px, 42px, 600);
     text-align: center;
   }
+
+  @include mixins.desktop {
+    @include mixins.font-info(variables.$font-secondary, 54px, 54px, 600);
+  }
+
 }

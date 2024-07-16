@@ -8,17 +8,14 @@
   align-items: center;
   flex-direction: column;
   position: relative;
+  padding: 0;
+}
 
+.price__wrapper {
   @include mixins.mobile {
     padding: 40px 15px;
   }
 
-  @include  mixins.tablet {
-    padding: 0;
-  }
-}
-
-.price__wrapper {
   @include  mixins.tablet {
     width: 100%;
     position: relative;
@@ -49,6 +46,14 @@
               "../img/price/plates-tablet@2x.png" type("image/png")
           );
       }
+    }
+  }
+
+  @include mixins.desktop {
+    padding: 100px 103px;
+
+    &:after {
+      right: -95px;
     }
   }
 }
