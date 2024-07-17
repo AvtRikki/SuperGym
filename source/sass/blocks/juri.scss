@@ -9,6 +9,10 @@
   @include mixins.tablet {
     padding: 30px 45px;
   }
+
+  @include mixins.desktop {
+    padding: 100px 103px;
+  }
 }
 
 .juri__button-wrapper {
@@ -26,6 +30,10 @@
 
   @include mixins.tablet {
     width: 570px
+  }
+
+  @include mixins.desktop {
+    width: 1160px;
   }
 }
 

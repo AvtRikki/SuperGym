@@ -18,6 +18,10 @@
     gap: 10px;
   }
 
+  @include mixins.desktop {
+    gap: 43px;
+  }
+
   & dl {
     display: flex;
     flex-direction: column;
@@ -75,8 +79,19 @@
   }
 
   & h3 {
-    @include mixins.font-info(variables.$font-primary, 18px, 20px);
     margin: 0 0 12px;
+
+    @include mixins.mobile {
+      @include mixins.font-info(variables.$font-primary, 18px, 20px);
+    }
+
+    @include mixins.tablet {
+      @include mixins.font-info(variables.$font-primary, 20px, 20px);
+    }
+
+    @include mixins.desktop {
+      @include mixins.font-info(variables.$font-primary, 22px, 22px);
+    }
   }
 
   & p {
@@ -107,6 +122,11 @@
     margin: 0 auto;
   }
 
+  @include mixins.desktop {
+    padding: 58px 40px;
+    gap: 30px;
+  }
+
   & dl {
     @include mixins.tablet {
       align-items: center;
@@ -120,17 +140,37 @@
     @include mixins.tablet {
       margin-bottom: 25px;
     }
+
+    @include mixins.desktop {
+      margin-bottom: 10px;
+    }
   }
 
   & dd {
-    @include mixins.font-info(variables.$font-primary, 22px, 22px, 700);
     color: inherit;
     margin-bottom: 20px;
+
+    @include mixins.mobile {
+      @include mixins.font-info(variables.$font-primary, 22px, 22px, 700);
+    }
+
+    @include mixins.tablet {
+      @include mixins.font-info(variables.$font-primary, 24px, 24px, 700);
+    }
+
+    @include mixins.desktop {
+      @include mixins.font-info(variables.$font-primary, 26px, 26px, 700);
+      margin-bottom: 30px;
+    }
   }
 
   p {
     @include mixins.tablet {
       text-align: center;
+    }
+
+    @include mixins.desktop {
+      min-width: 280px;
     }
   }
 }
