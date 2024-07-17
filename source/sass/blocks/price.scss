@@ -53,7 +53,8 @@
     padding: 100px 103px;
 
     &:after {
-      right: -95px;
+      left: calc(50% + 365px);
+      transform: translateX(50%) rotate(150deg);
     }
   }
 }
