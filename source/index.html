@@ -490,49 +490,55 @@
       </ul>
     </section>
     <section class="section offers" data-test="offers">
-      <h2 class="section__title offers__title">Акции</h2>
-      <ul class="offers__list">
-        <li class="offers__item offers__item--special">
-          <div class="offers__item-description">
-            <h3>
-              Год
-              <span>4999</span>
-            </h3>
-            <p>Безлимитный абонемент в тренажёрный зал</p>
-            <a href="#">Подробнее</a>
+      <div class="page__container">
+        <div class="offers__wrapper">
+          <h2 class="section__title offers__title">Акции</h2>
+          <div class="offers__promos">
+            <div class="offers__item offers__item--special">
+              <div class="offers__item-description">
+                <h3>
+                  Год
+                  <span>4999</span>
+                </h3>
+                <p>Безлимитный абонемент в тренажёрный зал</p>
+                <a href="#">Подробнее</a>
+              </div>
+              <div class="offers__item-image">
+                <picture>
+                  <source type="image/webp" media="(min-width: 1366px)"
+                          srcset="img/offer/offer-desktop@1x.webp 1x, img/offer/offer-desktop@2x.webp 2x" width="280" height="460">
+                  <source type="image/webp" media="(min-width: 768px)"
+                          srcset="img/offer/offer-tablet@1x.webp 1x, img/offer/offer-tablet@2x.webp 2x" width="400" height="462">
+                  <source type="image/webp"
+                          srcset="img/offer/offer-mobile@1x.webp 1x, img/offer/offer-mobile@2x.webp 2x" width="320" height="360">
+                  <source type="image/jpeg" media="(min-width: 1366px)"
+                          srcset="img/offer/offer-desktop@1x.jpg 1x, img/offer/offer-desktop@2x.jpg 2x" width="280" height="460">
+                  <source type="image/jpeg" media="(min-width: 768px)" srcset="img/offer/offer-tablet@1x.jpg 1x, img/offer/offer-tablet@2x.jpg 2x" width="400"
+                          height="462">
+                  <img src="img/offer/offer-mobile@1x.jpg" srcset="img/offer/offer-mobile@2x.jpg 2x" width="320"
+                       height="360" alt="Девушка в спортивной форме">
+                </picture>
+              </div>
+            </div>
+            <ul class="offers__list">
+              <li class="offers__item">
+                <div class="offers__item-description">
+                  <h3>Месяц бесплатно</h3>
+                  <p>Приведи друга, получи абонемент в подарок</p>
+                  <a href="#">Подробнее</a>
+                </div>
+              </li>
+              <li class="offers__item">
+                <div class="offers__item-description">
+                  <h3>Скидка 20%</h3>
+                  <p>Корпоративный фитнес с командой</p>
+                  <a href="#">Подробнее</a>
+                </div>
+              </li>
+            </ul>
           </div>
-          <div class="offers__item-image">
-            <picture>
-              <source type="image/webp" media="(min-width: 1366px)"
-                srcset="img/offer/offer-desktop@1x.webp 1x, img/offer/offer-desktop@2x.webp 2x" width="280" height="460">
-              <source type="image/webp" media="(min-width: 768px)"
-                srcset="img/offer/offer-tablet@1x.webp 1x, img/offer/offer-tablet@2x.webp 2x" width="400" height="462">
-              <source type="image/webp"
-                srcset="img/offer/offer-mobile@1x.webp 1x, img/offer/offer-mobile@2x.webp 2x" width="320" height="360">
-              <source type="image/jpeg" media="(min-width: 1366px)"
-                srcset="img/offer/offer-desktop@1x.jpg 1x, img/offer/offer-desktop@2x.jpg 2x" width="280" height="460">
-              <source type="image/jpeg" media="(min-width: 768px)" srcset="img/offer/offer-tablet@1x.jpg 1x, img/offer/offer-tablet@2x.jpg 2x" width="400"
-                height="462">
-              <img src="img/offer/offer-mobile@1x.jpg" srcset="img/offer/offer-mobile@2x.jpg 2x" width="320"
-                height="360" alt="Девушка в спортивной форме">
-            </picture>
-          </div>
-        </li>
-        <li class="offers__item">
-          <div class="offers__item-description">
-            <h3>Месяц бесплатно</h3>
-            <p>Приведи друга, получи абонемент в подарок</p>
-            <a href="#">Подробнее</a>
-          </div>
-        </li>
-        <li class="offers__item">
-          <div class="offers__item-description">
-            <h3>Скидка 20%</h3>
-            <p>Корпоративный фитнес с командой</p>
-            <a href="#">Подробнее</a>
-          </div>
-        </li>
-      </ul>
+        </div>
+      </div>
     </section>
     <section class="section faq" data-test="faq">
       <h2 class="section__title faq__title">Вопросы и ответы</h2>
