@@ -16,10 +16,21 @@
     column-gap: 30px;
     margin-bottom: 0;
   }
+
+  @include mixins.desktop {
+    column-gap: 82px;
+  }
 }
 
 .navigation__link {
-  @include mixins.font-info(variables.$font-primary, 14px, 20px);
   color: inherit;
   text-decoration: none;
+
+  @include mixins.mobile {
+    @include mixins.font-info(variables.$font-primary, 14px, 20px);
+  }
+
+  @include mixins.tablet {
+    @include mixins.font-info(variables.$font-primary, 14px, 22px);
+  }
 }

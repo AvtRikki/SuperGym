@@ -784,7 +784,8 @@
       </section>
     </div>
     <footer class="footer" data-test="footer">
-      <nav class="footer__navigation navigation">
+      <div class="page__container">
+        <nav class="footer__navigation navigation">
         <h2 class="visually-hidden">Навигация</h2>
         <a class="footer__logo" href="index.html">
           <picture>
@@ -810,41 +811,42 @@
             <a class="navigation__link" href="#">Расписание</a>
           </li>
         </ul>
-      </nav>
-      <div class="footer__social">
-        <h2 class="visually-hidden">Мы в соцсетях</h2>
-        <ul class="footer__social-list">
-          <li class="footer__social-item">
-            <a class="footer__social-link" href="#">
+        <div class="footer__social">
+          <h2 class="visually-hidden">Мы в соцсетях</h2>
+          <ul class="footer__social-list">
+            <li class="footer__social-item">
+              <a class="footer__social-link" href="#">
               <span class="visually-hidden">
                 Мы Вконтакте
               </span>
-              <svg width="25" height="25">
-                <use href="/__spritemap#sprite-social-vk-icon"></use>
-              </svg>
-            </a>
-          </li>
-          <li class="footer__social-item">
-            <a class="footer__social-link" href="#">
+                <svg width="25" height="25">
+                  <use href="/__spritemap#sprite-social-vk-icon"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="footer__social-item">
+              <a class="footer__social-link" href="#">
               <span class="visually-hidden">
                 Мы Одноклассниках
               </span>
-              <svg width="25" height="25">
-                <use href="/__spritemap#sprite-social-ok-icon"></use>
-              </svg>
-            </a>
-          </li>
-          <li class="footer__social-item">
-            <a class="footer__social-link" href="#">
+                <svg width="25" height="25">
+                  <use href="/__spritemap#sprite-social-ok-icon"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="footer__social-item">
+              <a class="footer__social-link" href="#">
               <span class="visually-hidden">
                 Мы на Реддите
               </span>
-              <svg width="25" height="25">
-                <use href="/__spritemap#sprite-social-reddit-icon"></use>
-              </svg>
-            </a>
-          </li>
-        </ul>
+                <svg width="25" height="25">
+                  <use href="/__spritemap#sprite-social-reddit-icon"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
       </div>
     </footer>
     <script type="module" src="js/main.js"></script>
