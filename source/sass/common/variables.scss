@@ -28,12 +28,16 @@ $background-color-accent: #102654;
 $background-color-alternate: linear-gradient(90deg, #1c3477 0%, #1c3477 0.01%, #1a3578 39.11%, #73184b 75.5%, #b4022a 100%);
 $background-color-additional: #1C3374;
 $background-color-cover: #14367A;
-$background-color-play-button: linear-gradient(90deg, #ed0233 0%, #003eb7 100%);
+$background-color-hover: linear-gradient(90deg, #ed0233 0%, #003eb7 100%);
+$background-color-focus: linear-gradient(90deg, rgba(#ed0233, 0.8) 0%, rgba(#003eb7, 0.8) 100%);
+$background-color-active-tab: linear-gradient(120deg, #ed0233 17.6%, #003eb7 95.31%);
 $background-color-transparent: transparent;
 
 //Borders
 $border-color-primary: rgba(#787878, 0.2);
 $border-color-secondary: #74819C;
+$border-color-accent: #000000;
+$border-card: linear-gradient(128deg, $button-color-tab-state 0%, $font-color-alternate 45.58%);
 
 //Shadows
 $shadow-color-primary: rgba(#2A3B63, 0.17);

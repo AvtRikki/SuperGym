@@ -1,0 +1,57 @@
+@use "../common/variables.scss";
+@use "../common/mixins.scss";
+
+.link {
+  @include mixins.font-info(variables.$font-primary, 14px, 14px, 700);
+  text-transform: uppercase;
+  padding: 10px;
+  text-underline-offset: 5px;
+}
+
+.link__primary {
+  border: 1px solid variables.$background-color-transparent;
+  color: variables.$font-color-secondary;
+
+  &:hover {
+    color: rgba(variables.$font-color-secondary, 0.8);
+  }
+
+  &:focus {
+    color: variables.$font-color-secondary;
+    border-color: variables.$font-color-secondary;
+  }
+
+  &:active {
+    color: variables.$font-color-secondary;
+  }
+
+  &:disabled {
+    opacity: 0.5;
+  }
+}
+
+.link__secondary {
+  color: variables.$button-color-secondary;
+  border: 1px solid variables.$background-color-transparent;
+  text-decoration-color: variables.$border-color-secondary;
+
+  &:hover {
+    color: variables.$button-color-secondary;
+    text-decoration-color: variables.$button-color-secondary;
+    opacity: 0.8;
+  }
+
+  &:focus {
+    color: variables.$button-color-secondary;
+    border-color: variables.$button-color-secondary;
+  }
+
+  &:active {
+    color: variables.$button-color-secondary;
+    text-decoration-color: variables.$button-color-secondary;
+  }
+
+  &:disabled {
+    opacity: 0.3;
+  }
+}

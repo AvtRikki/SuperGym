@@ -96,7 +96,7 @@
 
 .faq__page-item--active {
   color: variables.$font-color-secondary;
-  background: linear-gradient(120deg, #ed0233 17.6%, #003eb7 95.31%);
+  background: variables.$background-color-active-tab;
 }
 
 .faq__page-content-wrapper {

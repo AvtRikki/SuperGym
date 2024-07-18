@@ -2,17 +2,65 @@
 @use "../common/mixins.scss";
 
 .button {
+  @include mixins.font-info(variables.$font-primary, 12px, 12px, 700);
+  text-transform: uppercase;
   border-width: 2px;
   border-style: solid;
   text-decoration: none;
   text-align: center;
-  text-transform: uppercase;
+  padding: 22px;
 }
 
 .button__primary {
   color: variables.$button-color-accent;
-  border-color: variables.$button-color-accent;
-  padding: 22px;
+  border: 2px solid variables.$button-color-accent;
+
+  &:hover {
+    color: variables.$font-color-accent;
+    background-color: variables.$button-color-accent;
+    border-color: variables.$button-color-accent;
+  }
+
+  &:focus {
+    color: variables.$font-color-accent;
+    border-color: variables.$border-color-accent;
+    background-color: rgba(variables.$button-color-accent, 0.8);
+  }
+
+  &:active {
+    color: variables.$button-color-primary;
+    border-color: variables.$button-color-accent;
+    background-color: variables.$button-color-accent;
+  }
+
+  &:disabled {
+    opacity: 0.5;
+  }
+}
+
+.button__secondary {
+  border-color: variables.$font-color-primary;
+  color: variables.$font-color-primary;
+
+  &:hover {
+    color: variables.$font-color-secondary;
+    background-image: variables.$background-color-hover;
+  }
+
+  &:focus {
+    color: variables.$font-color-secondary;
+    background-image: variables.$background-color-focus;
+    border-color: variables.$border-color-accent;
+  }
+
+  &:active {
+    color: rgba(variables.$font-color-secondary, 0.7);
+    background-image: variables.$background-color-hover;
+  }
+
+  &:disabled {
+    opacity: 0.3;
+  }
 }
 
 .button__swiper {

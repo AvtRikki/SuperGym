@@ -101,8 +101,5 @@
 }
 
 .subscription-card__action {
-  @include mixins.font-info(variables.$font-primary, 12px, 12px, 700);
-  border-color: variables.$font-color-primary;
-  color: variables.$font-color-primary;
   align-self: stretch;
 }

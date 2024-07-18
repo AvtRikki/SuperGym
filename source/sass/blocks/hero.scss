@@ -161,9 +161,6 @@
 }
 
 .hero__action {
-  @include mixins.font-info(variables.$font-primary, 12px, 12px, 700);
-  text-transform: uppercase;
-
   @include mixins.mobile {
     grid-column: 1 / 3;
     margin-top: 48px;
