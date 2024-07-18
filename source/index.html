@@ -740,43 +740,49 @@
         </button>
       </div>
     </section>
-    <section class="section form" data-test="form">
-      <h2 class="section__title form__title">Бесплатное занятие</h2>
-      <form class="form__subscription"  id="subscription-form" action="https://echo.htmlacademy.ru/" method="post">
-        <label class="form__input-label">
-          <input type="text" name="name" id="name" required pattern="[a-zA-Z\u0400-\u04ff\-\s]{1,}" minlength="1"
-            placeholder="Имя" title="В поле Имя допускается ввод только букв и пробелов.">
-          <span>Имя</span>
-        </label>
-        <label class="form__input-label">
-          <input type="tel" name="phone" id="phone" placeholder="Телефон" required pattern="[+]?[0-9\-\(\)]+"
-            title="В Поле Телефон допускается ввод только цифр и спец символов.">
-          <span>Телефон</span>
-        </label>
-        <button class="form__input-button button button__primary" type="submit">Отправить</button>
-      </form>
-    </section>
-    <section class="section contacts" data-test="contacts">
-      <h2 class="section__title contacts__title">Контакты</h2>
-      <ul class="contacts__list">
-        <li class="contacts__item">
-          <p class="contacts__item-title">Адрес:</p>
-          <address class="contacts__item-info">г. Омск, ул. 60 лет Октября, 7</address>
-        </li>
-        <li class="contacts__item">
-          <p class="contacts__item-title">График работы:</p>
-          <p class="contacts__item-info">Пн-Вс: с 8:00 до 22:00</p>
-        </li>
-        <li class="contacts__item">
-          <p class="contacts__item-title">Телефон:</p>
-          <a class="contacts__item-info" href="tel:88005555555">8-800-555-55-55</a>
-        </li>
-        <li class="contacts__item">
-          <p class="contacts__item-title">Email:</p>
-          <a class="contacts__item-info" href="mailto:omsk@supergym.ru">omsk@supergym.ru</a>
-        </li>
-      </ul>
-    </section>
+    <div class="page__container-wide-splitter">
+      <section class="section form" data-test="form">
+        <div class="form__wrapper">
+          <h2 class="section__title form__title">Бесплатное занятие</h2>
+          <form class="form__subscription"  id="subscription-form" action="https://echo.htmlacademy.ru/" method="post">
+            <label class="form__input-label">
+              <input type="text" name="name" id="name" required pattern="[a-zA-Z\u0400-\u04ff\-\s]{1,}" minlength="1"
+                placeholder="Имя" title="В поле Имя допускается ввод только букв и пробелов.">
+              <span>Имя</span>
+            </label>
+            <label class="form__input-label">
+              <input type="tel" name="phone" id="phone" placeholder="Телефон" required pattern="[+]?[0-9\-\(\)]+"
+                title="В Поле Телефон допускается ввод только цифр и спец символов.">
+              <span>Телефон</span>
+            </label>
+            <button class="form__input-button button button__primary" type="submit">Отправить</button>
+          </form>
+        </div>
+      </section>
+      <section class="section contacts" data-test="contacts">
+        <div class="contacts__wrapper">
+          <h2 class="section__title contacts__title">Контакты</h2>
+          <ul class="contacts__list">
+            <li class="contacts__item">
+              <p class="contacts__item-title">Адрес:</p>
+              <address class="contacts__item-info">г. Омск, ул. 60 лет Октября, 7</address>
+            </li>
+            <li class="contacts__item">
+              <p class="contacts__item-title">График работы:</p>
+              <p class="contacts__item-info">Пн-Вс: с 8:00 до 22:00</p>
+            </li>
+            <li class="contacts__item">
+              <p class="contacts__item-title">Телефон:</p>
+              <a class="contacts__item-info" href="tel:88005555555">8-800-555-55-55</a>
+            </li>
+            <li class="contacts__item">
+              <p class="contacts__item-title">Email:</p>
+              <a class="contacts__item-info" href="mailto:omsk@supergym.ru">omsk@supergym.ru</a>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </div>
     <footer class="footer" data-test="footer">
       <nav class="footer__navigation navigation">
         <h2 class="visually-hidden">Навигация</h2>

@@ -9,6 +9,16 @@
   @include mixins.tablet {
     padding: 60px 45px;
   }
+
+  @include mixins.desktop {
+    padding: 60px 103px;
+  }
+}
+
+.contacts__wrapper {
+  @include mixins.desktop {
+    align-self: flex-start;
+  }
 }
 
 .contacts__title {
@@ -16,6 +26,11 @@
 
   @include mixins.tablet {
     @include mixins.font-info(variables.$font-secondary, 54px, 54px, 600);
+  }
+
+  @include mixins.desktop {
+    text-align: left;
+    margin-bottom: 36px;
   }
 }
 
@@ -48,6 +63,10 @@
       left: 50%;
       transform: translateX(-50%);
     }
+  }
+
+  @include mixins.desktop {
+    column-gap: 120px;
   }
 }
 

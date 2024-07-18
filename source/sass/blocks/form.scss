@@ -9,9 +9,20 @@
   }
 
   @include mixins.tablet {
-    padding: 60px 45px;
+    padding: 60px 164px;
+  }
+
+  @include mixins.desktop {
+    padding: 60px 103px;
   }
 }
+
+.form__wrapper {
+  @include mixins.desktop {
+    align-self: flex-end;
+  }
+}
+
 
 .form__title {
   color: variables.$font-color-secondary;
@@ -19,6 +30,10 @@
 
   @include mixins.tablet {
     @include mixins.font-info(variables.$font-secondary, 54px, 54px, 600);
+  }
+
+  @include mixins.desktop {
+    text-align: left;
   }
 }
 
@@ -49,6 +64,10 @@
     background-color: variables.$background-color-transparent;
     border: 0;
     border-bottom: 1px solid variables.$background-color-primary;
+  }
+
+  & input::placeholder {
+    color: rgba(variables.$font-color-secondary, 0.4);
   }
 }
 

@@ -24,3 +24,15 @@
   max-width: variables.$view-port-desktop-wide;
   margin: 0 auto;
 }
+
+.page__container-wide-splitter {
+
+  @include mixins.mobile {
+    display: block;
+  }
+
+  @include  mixins.desktop {
+    display: grid;
+    grid-template-columns: 50% 50%;
+  }
+}
