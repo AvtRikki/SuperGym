@@ -23,6 +23,11 @@
       @include mixins.font-info(variables.$font-primary, 22px, 22px);
       padding: 32px 118px 32px 0;
     }
+
+    @include mixins.desktop {
+      @include mixins.font-info(variables.$font-primary, 24px, 24px);
+      padding: 23px 125px 23px 0;
+    }
   }
 
   & p {
@@ -39,6 +44,11 @@
       @include mixins.font-info(variables.$font-primary, 18px, 24px, 300);
       margin-top: -22px;
       padding-right: 118px;
+    }
+
+    @include mixins.desktop {
+      margin-top: 0;
+      padding-right: 200px;
     }
   }
 }

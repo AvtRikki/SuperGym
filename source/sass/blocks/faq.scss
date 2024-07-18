@@ -3,13 +3,19 @@
 
 .faq {
   background-color: variables.$background-color-secondary;
+}
 
+.faq__wrapper {
   @include mixins.mobile {
     padding: 70px 15px;
   }
 
   @include mixins.tablet {
     padding: 60px 45px;
+  }
+
+  @include mixins.desktop {
+    padding: 100px 103px;
   }
 }
 
@@ -23,9 +29,13 @@
   @include mixins.tablet {
     margin-bottom: 45px;
   }
+
+  @include mixins.desktop {
+    margin-bottom: 50px;
+  }
 }
 
-.faq__wrapper {
+.faq__tab-control {
   display: grid;
   grid-template-columns: 1fr;
   gap: 35px;
@@ -38,6 +48,11 @@
 
   @include mixins.tablet {
     gap: 45px;
+  }
+
+  @include mixins.desktop {
+    grid-template-columns: 260px 1fr;
+    gap: 40px;
   }
 }
 
@@ -52,6 +67,10 @@
 
   @include mixins.tablet {
     display: flex;
+  }
+
+  @include mixins.desktop {
+    flex-direction: column;
   }
 }
 
