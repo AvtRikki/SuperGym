@@ -55,9 +55,29 @@
 
 .footer__social-link {
   display: block;
-  color: variables.$background-color-tertiary;;
+  color: variables.$background-color-tertiary;
   background-color: variables.$background-color-primary;
   width: 25px;
   height: 25px;
   border-radius: 50%;
+
+  &:hover {
+    color: variables.$font-color-secondary;
+    background-color: variables.$border-color-secondary;
+  }
+
+  &:focus {
+    color: variables.$font-color-secondary;
+    background-color: variables.$font-color-accent;
+  }
+
+  &:active {
+    color: variables.$font-color-secondary;
+    background-color: variables.$background-color-accent;
+  }
+
+  &:disabled {
+    color: variables.$background-color-tertiary;
+    background-color: rgba(variables.$background-color-primary, 0.3);
+  }
 }

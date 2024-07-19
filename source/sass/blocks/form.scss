@@ -55,6 +55,7 @@
 .form__input-label {
   display: block;
   width: 100%;
+  position: relative;
 
   & input {
     @include mixins.font-info(variables.$font-primary, 14px, 22px, 300);
@@ -62,13 +63,32 @@
     width: 100%;
     color: variables.$font-color-secondary;
     background-color: variables.$background-color-transparent;
-    border: 0;
+    border: 1px solid variables.$background-color-transparent;
+    border-bottom: 1px solid rgba(variables.$background-color-primary, 0.5);
+  }
+
+  & input:hover {
     border-bottom: 1px solid variables.$background-color-primary;
+  }
+
+  & input:focus {
+    border: 1px solid variables.$background-color-primary;
+  }
+
+  & input:disabled {
+    opacity: 0.4;
   }
 
   & input::placeholder {
     color: rgba(variables.$font-color-secondary, 0.4);
   }
+}
+
+.form__input-validation {
+  position: absolute;
+  right: 0;
+  bottom: -5px;
+  color: variables.$forms-color-error;
 }
 
 .form__input-button {

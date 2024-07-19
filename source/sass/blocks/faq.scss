@@ -79,11 +79,28 @@
   text-align: center;
   padding: 14px 22px;
   border: 1px solid variables.$border-color-primary;
+  cursor: pointer;
+
+  &:focus-within,
+  &:focus,
+  &:hover {
+    border: 1px solid variables.$button-color-primary;
+  }
+
+  &:active {
+    color: variables.$font-color-secondary;
+    background: variables.$background-color-active-tab;
+  }
+
+  &:disabled {
+    opacity: 0.2;
+  }
 }
 
 .faq__page-link {
   text-decoration: none;
   color: inherit;
+  outline: none;
 
   @include mixins.mobile {
     @include mixins.font-info(variables.$font-primary, 16px, 16px);

@@ -32,6 +32,11 @@
   justify-content: center;
   background-color: variables.$background-color-transparent;
 
+  @include mixins.desktop {
+    width: 100px;
+    height: 100px;
+  }
+
   &:after {
     content: "";
     display: block;
@@ -39,12 +44,77 @@
     height: 52px;
     background: variables.$background-color-hover;
     border-radius: 50%;
+
+    @include mixins.desktop {
+      width: 72px;
+      height: 72px;
+    }
+  }
+
+  &:hover {
+    background-color: variables.$background-color-transparent;
+    border-color: rgba(variables.$background-color-accent, 0.6);
+
+    &:after {
+      background: variables.$background-color-primary;
+    }
+
+    & .video-cover__button-play--icon {
+      color: rgba(variables.$background-color-accent, 0.6);
+    }
+  }
+
+  &:focus {
+    background-color: variables.$background-color-transparent;
+    border-color: variables.$background-color-accent;
+
+    &:after {
+      background: variables.$background-color-focus-alternate;
+    }
+
+    & .video-cover__button-play--icon {
+      color: variables.$background-color-accent;
+    }
+  }
+
+  &:active {
+    background-color: variables.$background-color-transparent;
+    border-color: variables.$background-color-accent;
+
+    &:after {
+      background: variables.$background-color-primary;
+    }
+
+    & .video-cover__button-play--icon {
+      color: variables.$background-color-accent;
+    }
+  }
+
+  &:disabled {
+    background-color: variables.$background-color-transparent;
+    border-color: variables.$button-color-primary;
+    opacity: 0.4;
+
+    &:after {
+      background: variables.$background-color-primary;
+      opacity: 0.4;
+    }
+
+    & .video-cover__button-play--icon {
+      color: variables.$button-color-primary;
+      opacity: 0.4;
+    }
   }
 }
 
 .video-cover__button-play--icon {
   color: variables.$button-color-accent;
   position: absolute;
-  width: 9px;
+  width: 12px;
   height: 12px;
+
+  @include mixins.desktop {
+    width: 17px;
+    height: 17px;
+  }
 }
