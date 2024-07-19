@@ -4,53 +4,44 @@ $font-secondary: "Alumni Sans", "Arial", sans-serif;
 
 //Text Colors
 $font-color-primary: #102654;
-$font-color-secondary: #FFFFFF;
-$font-color-tertiary: #B6BDCC;
-$font-color-accent: #103AAE;
+$font-color-secondary: #ffffff;
+$font-color-tertiary: #b6bdcc;
+$font-color-accent: #103aae;
 $font-color-alternate: #0041ca;
-$font-color-accent-alternate: #2E35AC;
+$font-color-accent-alternate: #2e35ac;
 $font-color-accent-alternate-2: linear-gradient(129deg, #d10a42 0%, #0041ca 100%);
-$font-color-shadow: #E8E8E8;
+$font-color-shadow: #e8e8e8;
 
 //Buttons Colors
 $button-color-primary: #102654;
-$button-color-secondary: #1C3374;
-$button-color-accent: #FFFFFF;
+$button-color-secondary: #1c3374;
+$button-color-accent: #ffffff;
 $button-color-alternate: linear-gradient(136deg, #d10a42 0%, #00359f 100%);
-$button-color-tab-state: #D10A42;
+$button-color-tab-state: #d10a42;
 
 //Background colors
-$background-color-primary: #FFFFFF;
-$background-color-secondary: #F8F9FC;
-$background-color-tertiary: #030A1A;
-$background-color-banner: #ED0233;
+$background-color-primary: #ffffff;
+$background-color-secondary: #f8f9fc;
+$background-color-tertiary: #030a1a;
+$background-color-banner: #ed0233;
 $background-color-accent: #102654;
 $background-color-alternate: linear-gradient(90deg, #1c3477 0%, #1c3477 0.01%, #1a3578 39.11%, #73184b 75.5%, #b4022a 100%);
-$background-color-additional: #1C3374;
-$background-color-cover: #14367A;
+$background-color-cover: #14367a;
 $background-color-hover: linear-gradient(90deg, #ed0233 0%, #003eb7 100%);
 $background-color-focus: linear-gradient(90deg, rgba(#ed0233, 0.8) 0%, rgba(#003eb7, 0.8) 100%);
 $background-color-active-tab: linear-gradient(120deg, #ed0233 17.6%, #003eb7 95.31%);
 $background-color-transparent: transparent;
-$background-color-focus-alternate: #C8C9CC;
+$background-color-focus-alternate: #c8c9cc;
 
 //Borders
 $border-color-primary: rgba(#787878, 0.2);
-$border-color-secondary: #74819C;
+$border-color-secondary: #74819c;
 $border-color-accent: #000000;
 $border-card: linear-gradient(128deg, $button-color-tab-state 0%, $font-color-alternate 45.58%);
 $border-color-hover: rgba(#787878, 0.2);
 
-//Shadows
-$shadow-color-primary: rgba(#2A3B63, 0.17);
-
-//Icons
-$icon-color-primary: #FFFFFF;
-$icon-color-secondary: #102654;
-
 //Forms
-$forms-color-primary: #FFFFFF;
-$forms-color-error: #FF121F;
+$forms-color-error: #ff121f;
 
 // View Port Size
 $view-port-desktop-wide: 1920px;
