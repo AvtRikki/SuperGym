@@ -60,13 +60,12 @@
 }
 
 .juri__button {
-  color: variables.$font-color-primary;
   @include mixins.mobile {
     display: none;
   }
 
   @include mixins.tablet {
-    display: block;
+    display: flex;
     position: absolute;
     top: 50%;
     transform: translateY(-50%);

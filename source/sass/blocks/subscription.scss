@@ -42,10 +42,16 @@
 }
 
 .subscription__tab-button {
+  color: rgba(variables.$font-color-primary, 0.5);
   background-color: variables.$background-color-transparent;
   border: none;
   margin-bottom: 10px;
   padding: 0;
+  cursor: pointer;
+  position: relative;
+  text-decoration: none;
+  text-underline-offset: 11px;
+  text-decoration-thickness: 2px;
 
   @include mixins.mobile {
     @include mixins.font-info(variables.$font-primary, 16px, 16px);
@@ -58,10 +64,29 @@
   @include mixins.desktop {
     @include mixins.font-info(variables.$font-primary, 20px, 20px);
   }
-}
 
-.subscription__tab .subscription__tab-button {
-  color: rgba(variables.$font-color-primary, 0.5);
+  &:hover {
+    text-decoration: underline;
+    color: rgba(variables.$font-color-primary, 0.7);
+    text-decoration-color: variables.$border-color-hover;
+  }
+
+  &:focus {
+    text-decoration: underline;
+    color: variables.$font-color-primary;
+    text-decoration-color: variables.$font-color-primary;
+  }
+
+  &:active {
+    text-decoration: underline;
+    color: variables.$font-color-primary;
+    text-decoration-color: variables.$button-color-tab-state;
+  }
+
+  &:disabled {
+    color: rgba(variables.$font-color-primary, 0.3);
+    text-decoration-color: rgba(variables.$font-color-primary, 0.3);
+  }
 }
 
 .subscription__tab--active {
@@ -69,6 +94,7 @@
 
   & .subscription__tab-button {
     color: variables.$button-color-primary;
+    text-decoration: none;
   }
 
   &::after {
@@ -78,6 +104,7 @@
     position: absolute;
     bottom: 0;
     left: 0;
+    z-index: 1;
     background-color: variables.$button-color-tab-state;
   }
 }

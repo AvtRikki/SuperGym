@@ -9,6 +9,7 @@
   text-decoration: none;
   text-align: center;
   padding: 22px;
+  cursor: pointer;
 }
 
 .button__primary {
@@ -67,11 +68,30 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  color: variables.$font-color-primary;
   background: variables.$background-color-transparent;
   margin: 0;
   padding: 0;
+  border: 1px solid variables.$background-color-transparent;
   border-radius: 50%;
-  border: 0;
   width: 50px;
   height: 50px;
+
+  &:hover {
+    border-color: variables.$font-color-primary;
+  }
+
+  &:focus {
+    border-color: variables.$font-color-primary;
+    background: variables.$font-color-shadow;
+  }
+
+  &:active {
+    color: variables.$font-color-secondary;
+    background: variables.$button-color-primary;
+  }
+
+  &:disabled {
+    opacity: 0.3;
+  }
 }

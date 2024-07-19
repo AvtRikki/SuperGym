@@ -53,12 +53,61 @@
   }
 }
 
-.accordion__item-decoration {
+.accordion__item-expander {
   position: absolute;
   right: 0;
   border-radius: 50%;
   background-color: variables.$background-color-transparent;
   border: 1px solid variables.$button-color-secondary;
+  cursor: pointer;
+
+  &:hover {
+    background-color: variables.$button-color-secondary;
+  }
+
+  &:hover:before {
+    background-color: variables.$button-color-accent;
+  }
+
+  &:hover:after {
+    background-color: variables.$button-color-accent;
+  }
+
+  &:focus {
+    background-color: variables.$border-color-secondary;
+  }
+
+  &:focus:before {
+    background-color: variables.$button-color-accent;
+  }
+
+  &:focus:after {
+    background-color: variables.$button-color-accent;
+  }
+
+  &:active {
+    background-color: variables.$button-color-secondary;
+  }
+
+  &:active:before {
+    background-color: variables.$button-color-accent;
+  }
+
+  &:active:after {
+    background-color: variables.$background-color-transparent;
+  }
+
+  &:disabled {
+    background-color: rgba(variables.$button-color-secondary, 0.3);
+  }
+
+  &:disabled:before {
+    background-color: rgba(variables.$button-color-secondary, 0.3);
+  }
+
+  &:disabled:after {
+    background-color: rgba(variables.$button-color-secondary, 0.3);
+  }
 
   @include mixins.mobile {
     top: 25px;
@@ -100,15 +149,19 @@
     display: block;
   }
 
-  & .accordion__item-decoration {
+  & .accordion__item-expander {
     background-color: variables.$button-color-secondary;
   }
 
-  & .accordion__item-decoration:before {
+  & .accordion__item-expander:before {
     background-color: variables.$background-color-primary;
   }
 
-  & .accordion__item-decoration:after {
+  & .accordion__item-expander:after {
     background-color: variables.$background-color-transparent;
+  }
+
+  & .accordion__item-expander:active:after {
+    background-color: variables.$button-color-accent;
   }
 }
