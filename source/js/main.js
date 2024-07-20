@@ -1,5 +1,6 @@
 import { TabControl } from './modules/tab-controls/tab-control.js';
 import {VideoLoader} from './modules/videos/video-loader.js';
+import {SwiperInitializer} from './modules/sliders/swiper-initializer.js';
 
 const priceTabControl = new TabControl('subscription__tab', 'subscription__tab-item');
 priceTabControl.Initialize();
@@ -10,3 +11,11 @@ faqTabControl.Initialize();
 
 const videoLoader = new VideoLoader('about__video', 'about__video-source', 'video-cover');
 videoLoader.Initialize();
+
+const juriSlider = new SwiperInitializer('juri__wrapper');
+const juriOptions = juriSlider.CreateJuriOptions('juri__button--next', 'juri__button--prev');
+juriSlider.Initialize(juriOptions);
+
+const reviewSlider = new SwiperInitializer('reviews__wrapper');
+const reviewOptions = reviewSlider.CreateReviewOptions('reviews__button--next', 'reviews__button--prev');
+reviewSlider.Initialize(reviewOptions);

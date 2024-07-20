@@ -29,7 +29,7 @@
   }
 
   @include mixins.tablet {
-    width: 570px
+    width: 560px
   }
 
   @include mixins.desktop {
@@ -54,7 +54,6 @@
   @include mixins.list-base();
   display: flex;
   align-items: center;
-  gap: 40px;
   position: relative;
   z-index: 1;
 }
