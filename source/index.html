@@ -93,7 +93,7 @@
                 </svg>
               </button>
             </div>
-            <div class="about__video-source" data-src="https://www.youtube.com/watch?v=9TZXsZItgdw?autoplay=1"></div>
+            <div class="about__video-source" data-src="https://www.youtube.com/embed/9TZXsZItgdw?si=id0cuciuFR3HgFx2?rel=0&showinfo=0&autoplay=1&amp;controls=0"></div>
           </div>
         </div>
       </div>
@@ -104,24 +104,24 @@
         <h2 class="section__title price__title">Абонементы</h2>
         <div class="price__kinds subscription">
           <ul class="subscription__tabs">
-            <li class="subscription__tab subscription__tab--active">
+            <li class="subscription__tab subscription__tab--active" data-tab="month">
               <button class="subscription__tab-button " type="button">
                 1 месяц
               </button>
             </li>
-            <li class="subscription__tab">
+            <li class="subscription__tab" data-tab="half-year">
               <button class="subscription__tab-button" type="button">
                 6 месяцев
               </button>
             </li>
-            <li class="subscription__tab">
+            <li class="subscription__tab" data-tab="year">
               <button class="subscription__tab-button" type="button">
                 12 месяцев
               </button>
             </li>
           </ul>
           <ul class="subscription__tab-items">
-            <li class="subscription__tab-item subscription__tab-item--active">
+            <li class="subscription__tab-item subscription__tab-item--active" data-tab="month">
               <ul class="subscription__cards">
                 <li class="subscription__card subscription-card subscription-card--active">
                   <h3 class="visually-hidden">Занятия с тренером</h3>
@@ -169,15 +169,15 @@
                   </a>
                 </li>
               </ul>
-            </li>
-            <li class="subscription__tab-item">
+            </li >
+            <li class="subscription__tab-item" data-tab="half-year">
               <ul class="subscription__cards">
                 <li class="subscription__card subscription-card">
                   <h3 class="visually-hidden">Занятия с тренером</h3>
                   <p class="subscription-card__title">С тренером</p>
                   <p class="subscription-card__description">12 занятий</p>
-                  <p class="subscription-card__price" data-price="30 000">
-                    <span class="subscription-card__price--value">30 000</span>
+                  <p class="subscription-card__price" data-price="30000">
+                    <span class="subscription-card__price--value">30000</span>
                     <picture>
                       <source type="image/svg+xml" media="(min-width: 768px)" srcset="/__spritemap#sprite-currency-icon-view" width="30" height="42">
                       <img class="subscription-card__currency" src="/__spritemap#sprite-currency-icon-view" width="24" height="33" alt="Рублей">
@@ -191,8 +191,8 @@
                   <h3 class="visually-hidden">Занятия днем</h3>
                   <p class="subscription-card__title">Дневной</p>
                   <p class="subscription-card__description">с 8:00 до 17:00</p>
-                  <p class="subscription-card__price" data-price="10 200">
-                    <span class="subscription-card__price--value">10 200</span>
+                  <p class="subscription-card__price" data-price="10200">
+                    <span class="subscription-card__price--value">10200</span>
                     <picture>
                       <source type="image/svg+xml" media="(min-width: 768px)" srcset="/__spritemap#sprite-currency-icon-view" width="30" height="42">
                       <img class="subscription-card__currency" src="/__spritemap#sprite-currency-icon-view" width="24" height="33" alt="Рублей">
@@ -206,7 +206,7 @@
                   <h3 class="visually-hidden">Занятия весь день</h3>
                   <p class="subscription-card__title">Полный день</p>
                   <p class="subscription-card__description">с 8:00 до 22:00</p>
-                  <p class="subscription-card__price" data-price="16 200">
+                  <p class="subscription-card__price" data-price="16200">
                     <span class="subscription-card__price--value">16 200</span>
                     <picture>
                       <source type="image/svg+xml" media="(min-width: 768px)" srcset="/__spritemap#sprite-currency-icon-view" width="30" height="42">
@@ -219,14 +219,14 @@
                 </li>
               </ul>
             </li>
-            <li class="subscription__tab-item">
+            <li class="subscription__tab-item" data-tab="year">
               <ul class="subscription__cards">
                 <li class="subscription__card subscription-card">
                   <h3 class="visually-hidden">Занятия с тренером</h3>
                   <p class="subscription-card__title">С тренером</p>
                   <p class="subscription-card__description">12 занятий</p>
-                  <p class="subscription-card__price" data-price="60 000">
-                    <span class="subscription-card__price--value">60 000</span>
+                  <p class="subscription-card__price" data-price="60000">
+                    <span class="subscription-card__price--value">60000</span>
                     <picture>
                       <source type="image/svg+xml" media="(min-width: 768px)" srcset="/__spritemap#sprite-currency-icon-view" width="30" height="42">
                       <img class="subscription-card__currency" src="/__spritemap#sprite-currency-icon-view" width="24" height="33" alt="Рублей">
@@ -240,8 +240,8 @@
                   <h3 class="visually-hidden">Занятия днем</h3>
                   <p class="subscription-card__title">Дневной</p>
                   <p class="subscription-card__description">с 8:00 до 17:00</p>
-                  <p class="subscription-card__price" data-price="20 400">
-                    <span class="subscription-card__price--value">20 400</span>
+                  <p class="subscription-card__price" data-price="20400">
+                    <span class="subscription-card__price--value">20400</span>
                     <picture>
                       <source type="image/svg+xml" media="(min-width: 768px)" srcset="/__spritemap#sprite-currency-icon-view" width="30" height="42">
                       <img class="subscription-card__currency" src="/__spritemap#sprite-currency-icon-view" width="24" height="33" alt="Рублей">
@@ -255,8 +255,8 @@
                   <h3 class="visually-hidden">Занятия весь день</h3>
                   <p class="subscription-card__title">Полный день</p>
                   <p class="subscription-card__description">с 8:00 до 22:00</p>
-                  <p class="subscription-card__price" data-price="32 400">
-                    <span class="subscription-card__price--value">32 400</span>
+                  <p class="subscription-card__price" data-price="32400">
+                    <span class="subscription-card__price--value">32400</span>
                     <picture>
                       <source type="image/svg+xml" media="(min-width: 768px)" srcset="/__spritemap#sprite-currency-icon-view" width="30" height="42">
                       <img class="subscription-card__currency" src="/__spritemap#sprite-currency-icon-view" width="24" height="33" alt="Рублей">
@@ -546,17 +546,17 @@
           <h2 class="section__title faq__title">Вопросы и ответы</h2>
           <div class="faq__tab-control">
             <ul class="faq__page-list">
-              <li class="faq__page-item faq__page-item--active">
-                <a href="#" class="faq__page-link" data-tab="about">Центр</a>
+              <li class="faq__page-item faq__page-item--active" data-tab="about">
+                <a href="#" class="faq__page-link">Центр</a>
               </li>
-              <li class="faq__page-item">
-                <a href="#" class="faq__page-link" data-tab="subscription">Абонемент</a>
+              <li class="faq__page-item" data-tab="subscription">
+                <a href="#" class="faq__page-link">Абонемент</a>
               </li>
-              <li class="faq__page-item">
-                <a href="#" class="faq__page-link" data-tab="services">Услуги</a>
+              <li class="faq__page-item" data-tab="services">
+                <a href="#" class="faq__page-link">Услуги</a>
               </li>
-              <li class="faq__page-item">
-                <a href="#" class="faq__page-link" data-tab="rules">Правила</a>
+              <li class="faq__page-item" data-tab="rules">
+                <a href="#" class="faq__page-link">Правила</a>
               </li>
             </ul>
             <div class="faq__page-content-wrapper accordion">

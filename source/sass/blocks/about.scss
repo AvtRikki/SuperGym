@@ -120,12 +120,23 @@
 }
 
 .about__video {
+  @include mixins.mobile {
+    width: 320px;
+    height: 170px;
+  }
+
+  @include mixins.mobile {
+    width: 270px;
+    height: 170px;
+  }
+
   @include mixins.desktop {
     margin-left: 45px;
     margin-top: -30px;
-    max-width: 360px;
     grid-column: 2/4;
     grid-row: 6/7;
+    width: 360px;
+    height: 230px;
   }
 }
 
@@ -135,4 +146,8 @@
   @include mixins.tablet {
     margin-top: -85px;
   }
+}
+
+.about__video-source {
+  display: none;
 }
