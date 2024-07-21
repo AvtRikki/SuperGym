@@ -1,11 +1,18 @@
 import {Swiper} from '../../vendor/swiper/swiper-bundle.mjs';
 
 export class SwiperInitializer {
+  #SWIPER_DATA_SLIDE = 'swiper-slide';
+
   constructor(slideClassName) {
     this.slideClassName = slideClassName;
   }
 
   Initialize(options) {
+    const slides = document.querySelectorAll(`.${this.#SWIPER_DATA_SLIDE}`);
+    slides.forEach((slide) => {
+      slide.setAttribute('tabindex', '0');
+    });
+
     const slider = document.querySelector(`.${this.slideClassName}`);
     if (slider) {
       return new Swiper(slider, options);

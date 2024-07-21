@@ -23,6 +23,7 @@
     transform: translateX(-50%);
   }
 
+  &:focus .juri-card__details,
   &:hover .juri-card__details {
     display: block;
     background-color: rgba(variables.$background-color-accent, 0.89);
