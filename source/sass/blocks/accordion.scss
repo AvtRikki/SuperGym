@@ -28,8 +28,10 @@
 
   & p {
     @include mixins.font-info(variables.$font-primary, 16px, 20px, 300);
-    display: none;
     margin: 0 0 21px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease;
 
     @include mixins.mobile {
       @include mixins.font-info(variables.$font-primary, 16px, 20px, 300);
@@ -142,7 +144,8 @@
 
 .accordion__item--expanded {
   & p {
-    display: block;
+    max-height: 800px;
+    transition: max-height 2s ease;
   }
 
   & .accordion__item-expander {
