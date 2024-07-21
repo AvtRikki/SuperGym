@@ -2,6 +2,7 @@ import { TabControl } from './modules/tab-controls/tab-control.js';
 import {VideoLoader} from './modules/videos/video-loader.js';
 import {SwiperInitializer} from './modules/sliders/swiper-initializer.js';
 import {ScrollerControl} from './modules/scrollers/scroller-control.js';
+import {AccordionControl} from './modules/accordions/accordion-control.js';
 
 const priceTabControl = new TabControl('subscription__tab', 'subscription__tab-item');
 priceTabControl.Initialize();
@@ -23,3 +24,9 @@ reviewSlider.Initialize(reviewOptions);
 
 const scroller = new ScrollerControl('hero__action', 'price');
 scroller.Initialize();
+
+const accordions = document.querySelectorAll('.accordion');
+accordions.forEach((accordionElement) => {
+  const accordion = new AccordionControl(accordionElement);
+  accordion.Initalize('accordion__item');
+});

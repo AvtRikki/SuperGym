@@ -1,14 +1,6 @@
 @use "../common/variables.scss";
 @use "../common/mixins.scss";
 
-.accordion {
-  margin: 0 auto;
-
-  @include mixins.desktop {
-    margin: 0 auto 0 0;
-  }
-}
-
 .accordion__item {
   position: relative;
   & button {

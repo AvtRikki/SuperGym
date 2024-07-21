@@ -6,4 +6,8 @@ export class Utils {
   static GetBemClassWithElement(className, modificatorName) {
     return `${className}__${modificatorName}`;
   }
+
+  static IsParagraph(element) {
+    return element.nodeName.toLowerCase() === 'p';
+  }
 }
