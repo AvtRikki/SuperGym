@@ -20,12 +20,13 @@
     padding: 65px;
     gap: 22px;
   }
-}
 
-.subscription-card--active {
-  border: 7px solid;
-  border-image-slice: 1;
-  border-image-source: variables.$font-color-accent-alternate-2;
+  &:focus,
+  &:hover {
+    border: 7px solid;
+    border-image-slice: 1;
+    border-image-source: variables.$font-color-accent-alternate-2;
+  }
 }
 
 .subscription-card__title {
