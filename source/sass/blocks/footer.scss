@@ -25,10 +25,7 @@
   }
 }
 
-.footer__logo {
-  display: block;
-  text-decoration: none;
-
+.footer__logo-wrapper {
   @include mixins.mobile {
     margin-bottom: 30px;
   }
