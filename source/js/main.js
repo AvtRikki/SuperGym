@@ -16,7 +16,7 @@ const videoLoader = new VideoLoader('about__video', 'about__video-source', 'vide
 videoLoader.Initialize();
 
 const juriSlider = new SwiperInitializer('juri__wrapper');
-const juriOptions = juriSlider.CreateJuriOptions('juri__button--next', 'juri__button--prev');
+const juriOptions = juriSlider.CreateJuriOptions('juri__button-next', 'juri__button-prev');
 juriSlider.Initialize(juriOptions);
 
 const reviewSlider = new SwiperInitializer('reviews__wrapper');
