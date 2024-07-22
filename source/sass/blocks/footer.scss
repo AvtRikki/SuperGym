@@ -40,7 +40,8 @@
 }
 
 .footer__social-list {
-  @include mixins.list-base();
+  @include mixins.list-base;
+
   display: flex;
   flex-wrap: wrap;
   gap: 20px;

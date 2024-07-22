@@ -16,13 +16,13 @@
     padding: 40px 15px;
   }
 
-  @include  mixins.tablet {
+  @include mixins.tablet {
     width: 100%;
     position: relative;
     overflow: hidden;
     padding: 60px 45px;
 
-    &:after {
+    &::after {
       content: "";
       width: 275px;
       height: 328px;
@@ -34,17 +34,16 @@
       transform: rotate(150deg);
       bottom: 10px;
       right: -15px;
-      background-image:
-        image-set(
-            "../img/price/plates-tablet@1x.webp" type("image/webp"),
-            "../img/price/plates-tablet@1x.png" type("image/png")
+      background-image: image-set(
+        "../img/price/plates-tablet@1x.webp" type("image/webp"),
+        "../img/price/plates-tablet@1x.png" type("image/png")
+      );
+
+      @media (resolution >= 2dppx) {
+        background-image: image-set(
+          "../img/price/plates-tablet@2x.webp" type("image/webp"),
+          "../img/price/plates-tablet@2x.png" type("image/png")
         );
-      @media (min-resolution: 2dppx) {
-        background-image:
-          image-set(
-              "../img/price/plates-tablet@2x.webp" type("image/webp"),
-              "../img/price/plates-tablet@2x.png" type("image/png")
-          );
       }
     }
   }
@@ -52,7 +51,7 @@
   @include mixins.desktop {
     padding: 100px 103px;
 
-    &:after {
+    &::after {
       left: calc(50% + 365px);
       transform: translateX(50%) rotate(150deg);
     }

@@ -52,6 +52,7 @@
 
 .games__title {
   @include mixins.font-info(variables.$font-secondary, 48px, 54px, 600);
+
   text-transform: uppercase;
 
   @include mixins.tablet {
@@ -148,6 +149,7 @@
 
 .games__action {
   @include mixins.font-info(variables.$font-primary, 12px, 12px, 700);
+
   grid-column: 1/-1;
 
   @include mixins.desktop {
@@ -162,4 +164,3 @@
   height: 100%;
   width: 100%;
 }
-

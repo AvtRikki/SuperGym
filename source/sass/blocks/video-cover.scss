@@ -2,7 +2,7 @@
 @use "../common/mixins.scss";
 
 .video-cover {
-  &:before {
+  &::before {
     content: "";
     position: absolute;
     background-color: rgba(variables.$background-color-cover, 0.5);
@@ -37,7 +37,7 @@
     height: 100px;
   }
 
-  &:after {
+  &::after {
     content: "";
     display: block;
     width: 52px;
@@ -55,7 +55,7 @@
     background-color: variables.$background-color-transparent;
     border-color: rgba(variables.$background-color-accent, 0.6);
 
-    &:after {
+    &::after {
       background: variables.$background-color-primary;
     }
 
@@ -68,7 +68,7 @@
     background-color: variables.$background-color-transparent;
     border-color: variables.$background-color-accent;
 
-    &:after {
+    &::after {
       background: variables.$background-color-focus-alternate;
     }
 
@@ -81,7 +81,7 @@
     background-color: variables.$background-color-transparent;
     border-color: variables.$background-color-accent;
 
-    &:after {
+    &::after {
       background: variables.$background-color-primary;
     }
 
@@ -95,7 +95,7 @@
     border-color: variables.$button-color-primary;
     opacity: 0.4;
 
-    &:after {
+    &::after {
       background: variables.$background-color-primary;
       opacity: 0.4;
     }

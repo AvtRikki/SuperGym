@@ -92,17 +92,20 @@
 
     @include mixins.mobile {
       @include mixins.font-info(variables.$font-primary, 22px, 22px, 700);
+
       text-align: center;
     }
 
     @include mixins.tablet {
       @include mixins.font-info(variables.$font-primary, 26px, 26px, 700);
+
       text-align: left;
     }
   }
 
   & span {
     @include mixins.font-info(variables.$font-primary, 64px, 64px, 700);
+
     display: block;
     text-align: center;
 
@@ -124,11 +127,13 @@
 
     @include mixins.mobile {
       @include mixins.font-info(variables.$font-primary, 16px, 20px, 300);
+
       text-align: center;
     }
 
     @include mixins.tablet {
       @include mixins.font-info(variables.$font-primary, 16px, 24px, 300);
+
       text-align: left;
     }
   }
@@ -144,7 +149,7 @@
     display: inline-block;
 
     @include mixins.tablet {
-      margin: auto 0 0 0;
+      margin: auto 0 0;
     }
   }
 

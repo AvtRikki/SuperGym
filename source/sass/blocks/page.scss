@@ -8,6 +8,7 @@
 
 .page__body {
   @include mixins.font-info(variables.$font-primary, 16px, 24px);
+
   margin: 0;
   padding: 0;
   width: 100%;
@@ -26,12 +27,11 @@
 }
 
 .page__container-wide-splitter {
-
   @include mixins.mobile {
     display: block;
   }
 
-  @include  mixins.desktop {
+  @include mixins.desktop {
     display: grid;
     grid-template-columns: 50% 50%;
   }

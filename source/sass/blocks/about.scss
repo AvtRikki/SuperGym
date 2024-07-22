@@ -11,6 +11,7 @@
 
     & p {
       @include mixins.font-info(variables.$font-primary, 14px, 22px, 300);
+
       padding: 0 15px;
       margin: 0 0 36px;
     }
@@ -28,6 +29,7 @@
 
     & p {
       @include mixins.font-info(variables.$font-primary, 16px, 24px, 300);
+
       text-align: center;
       max-width: 502px;
       padding: 0;
@@ -89,11 +91,13 @@
 
   @include mixins.mobile {
     @include mixins.font-info(variables.$font-primary, 18px, 20px);
+
     padding: 0 15px;
   }
 
   @include mixins.tablet {
     @include mixins.font-info(variables.$font-primary, 20px, 20px);
+
     text-align: center;
   }
 

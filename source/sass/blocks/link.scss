@@ -3,6 +3,7 @@
 
 .link {
   @include mixins.font-info(variables.$font-primary, 14px, 14px, 700);
+
   text-transform: uppercase;
   padding: 10px;
   text-underline-offset: 5px;

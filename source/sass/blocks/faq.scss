@@ -57,7 +57,8 @@
 }
 
 .faq__page-list {
-  @include mixins.list-base();
+  @include mixins.list-base;
+
   gap: 10px;
 
   @include mixins.mobile {
@@ -127,7 +128,8 @@
 }
 
 .faq__page-content-list {
-  @include mixins.list-base();
+  @include mixins.list-base;
+
   display: none;
   width: 100%;
 }

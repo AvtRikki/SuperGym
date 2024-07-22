@@ -87,18 +87,18 @@
 
   @include mixins.mobile {
     grid-template-columns: auto 290px;
-    padding: 48px 15px 32px 15px;
+    padding: 48px 15px 32px;
   }
 
   @include mixins.tablet {
     grid-template-columns: auto min-content 26px 185px 30px 324px;
     grid-template-rows: 30px min-content min-content min-content 30px;
-    padding: 0 45px 100px 45px;
+    padding: 0 45px 100px;
   }
 
   @include mixins.desktop {
     grid-template-columns: auto min-content 270px 56px 500px;
-    padding: 30px 175px 120px 175px;
+    padding: 30px 175px 120px;
   }
 }
 
@@ -115,12 +115,14 @@
 
   @include mixins.tablet {
     @include mixins.font-info(variables.$font-secondary, 42px, 42px, 600);
+
     grid-column: 4 / 5;
     grid-row: 2 / 3;
   }
 
   @include mixins.desktop {
     @include mixins.font-info(variables.$font-secondary, 54px, 54px, 600);
+
     grid-column: 3 / 4;
   }
 }
@@ -136,6 +138,7 @@
 
   @include mixins.mobile {
     @include mixins.font-info(variables.$font-secondary, 62px, 62px, 800);
+
     letter-spacing: 0.02em;
     grid-row: 2 / 3;
     grid-column: 2 / 3;
@@ -143,6 +146,7 @@
 
   @include mixins.tablet {
     @include mixins.font-info(variables.$font-secondary, 72px, 85px, 800);
+
     letter-spacing: 0.03em;
     grid-column: 4 / 5;
     grid-row: 3 / 4;
@@ -150,13 +154,13 @@
 
   @include mixins.desktop {
     @include mixins.font-info(variables.$font-secondary, 92px, 110px, 800);
+
     place-self: start end;
     grid-column: 3 / 4;
   }
 }
 
 .hero__description {
-
   color: variables.$font-color-secondary;
   margin: 0;
   padding: 0;
@@ -165,12 +169,14 @@
 
   @include mixins.mobile {
     @include mixins.font-info(variables.$font-primary, 14px, 20px);
+
     grid-row: 2 / 3;
     grid-column: 2 / 3;
   }
 
   @include mixins.tablet {
     @include mixins.font-info(variables.$font-primary, 14px, 22px);
+
     grid-row: 3 / 4;
     grid-column: 2 / 3;
     margin-bottom: 20px;

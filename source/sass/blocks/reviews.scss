@@ -19,6 +19,7 @@
 
   @include mixins.tablet {
     @include mixins.font-info(variables.$font-secondary, 54px, 54px, 600);
+
     margin-bottom: 35px;
   }
 }
@@ -46,7 +47,7 @@
 }
 
 .reviews__list {
-  @include mixins.list-base();
+  @include mixins.list-base;
 }
 
 .reviews__item-content {
@@ -105,6 +106,7 @@
 
     @include mixins.tablet {
       @include mixins.font-info(variables.$font-primary, 22px, 22px);
+
       grid-column: 2/3;
     }
   }
@@ -114,11 +116,13 @@
 
     @include mixins.mobile {
       @include mixins.font-info(variables.$font-primary, 14px, 22px, 300);
+
       text-align: center;
     }
 
     @include mixins.tablet {
       @include mixins.font-info(variables.$font-primary, 16px, 24px, 300);
+
       text-align: left;
       grid-column: 2/3;
       grid-row: 2/3;

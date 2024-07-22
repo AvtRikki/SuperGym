@@ -42,7 +42,6 @@
     margin: 0;
     background: variables.$border-card;
     background-clip: text;
-    -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 
     @include mixins.mobile {
@@ -99,11 +98,13 @@
 
     @include mixins.mobile {
       @include mixins.font-info(variables.$font-primary, 14px, 22px, 300);
+
       text-align: center;
     }
 
     @include mixins.tablet {
       @include mixins.font-info(variables.$font-primary, 16px, 24px, 300);
+
       text-align: left;
     }
   }
@@ -160,6 +161,7 @@
 
     @include mixins.desktop {
       @include mixins.font-info(variables.$font-primary, 26px, 26px, 700);
+
       margin-bottom: 30px;
     }
   }

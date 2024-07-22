@@ -3,6 +3,7 @@
 
 .button {
   @include mixins.font-info(variables.$font-primary, 12px, 12px, 700);
+
   text-transform: uppercase;
   border-width: 2px;
   border-style: solid;

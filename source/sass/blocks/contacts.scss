@@ -35,7 +35,8 @@
 }
 
 .contacts__list {
-  @include mixins.list-base();
+  @include mixins.list-base;
+
   position: relative;
 
   @include mixins.mobile {
@@ -52,7 +53,7 @@
     row-gap: 15px;
     margin: 0 auto;
 
-    &:after {
+    &::after {
       content: "";
       position: absolute;
       bottom: 0;
@@ -81,11 +82,13 @@
 
   @include mixins.mobile {
     @include mixins.font-info(variables.$font-primary, 20px, 20px);
+
     margin: 0 0 12px;
   }
 
   @include mixins.tablet {
     @include mixins.font-info(variables.$font-primary, 24px, 24px);
+
     margin: 0 0 5px;
   }
 }

@@ -15,6 +15,7 @@
 
   & figcaption {
     @include mixins.font-info(variables.$font-primary, 22px, 22px);
+
     width: 100%;
     text-align: center;
     position: absolute;
@@ -49,6 +50,7 @@
 
 .juri-card__title {
   @include mixins.font-info(variables.$font-primary, 22px, 22px);
+
   text-align: center;
   margin: 0;
   padding: 0;
@@ -63,7 +65,8 @@
 }
 
 .juri-card__achievement-list {
-  @include mixins.list-base();
+  @include mixins.list-base;
+
   display: flex;
   flex-direction: column;
   gap: 12px;
@@ -72,10 +75,11 @@
 
 .juri-card__achievement-item {
   @include mixins.font-info(variables.$font-primary, 14px, 22px);
+
   position: relative;
   padding: 0 0 0 16px;
 
-  &:before {
+  &::before {
     content: "";
     width: 6px;
     height: 6px;
