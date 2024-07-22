@@ -73,13 +73,13 @@
   }
 }
 
-.juri__button--prev {
+.juri__button-prev {
   @include mixins.tablet {
     left: -72px;
   }
 }
 
-.juri__button--next {
+.juri__button-next {
   @include mixins.tablet {
     right: -72px;
 

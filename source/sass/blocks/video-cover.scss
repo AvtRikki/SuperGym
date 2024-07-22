@@ -59,7 +59,7 @@
       background: variables.$background-color-primary;
     }
 
-    & .video-cover__button-play--icon {
+    & .video-cover__button-play-icon {
       color: rgba(variables.$background-color-accent, 0.6);
     }
   }
@@ -72,7 +72,7 @@
       background: variables.$background-color-focus-alternate;
     }
 
-    & .video-cover__button-play--icon {
+    & .video-cover__button-play-icon {
       color: variables.$background-color-accent;
     }
   }
@@ -85,7 +85,7 @@
       background: variables.$background-color-primary;
     }
 
-    & .video-cover__button-play--icon {
+    & .video-cover__button-play-icon {
       color: variables.$background-color-accent;
     }
   }
@@ -100,14 +100,14 @@
       opacity: 0.4;
     }
 
-    & .video-cover__button-play--icon {
+    & .video-cover__button-play-icon {
       color: variables.$button-color-primary;
       opacity: 0.4;
     }
   }
 }
 
-.video-cover__button-play--icon {
+.video-cover__button-play-icon {
   color: variables.$button-color-accent;
   position: absolute;
   width: 12px;

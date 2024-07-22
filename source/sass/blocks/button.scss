@@ -13,7 +13,7 @@
   cursor: pointer;
 }
 
-.button__primary {
+.button--primary {
   color: variables.$button-color-accent;
   border: 2px solid variables.$button-color-accent;
 
@@ -40,7 +40,7 @@
   }
 }
 
-.button__secondary {
+.button--secondary {
   border-color: variables.$font-color-primary;
   color: variables.$font-color-primary;
 
@@ -65,7 +65,7 @@
   }
 }
 
-.button__swiper {
+.button--swiper {
   display: flex;
   justify-content: center;
   align-items: center;

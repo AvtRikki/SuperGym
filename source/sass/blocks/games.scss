@@ -68,8 +68,8 @@
   margin: 0;
 }
 
-.games__time--title,
-.games__date--title {
+.games__time-title,
+.games__date-title {
   margin-bottom: 3px;
 
   @include mixins.mobile {
@@ -81,8 +81,8 @@
   }
 }
 
-.games__time--value,
-.games__date--value {
+.games__time-value,
+.games__date-value {
   position: relative;
   margin: 0;
   padding-top: 2px;
@@ -100,8 +100,8 @@
   }
 }
 
-.games__time--hours,
-.games__date--day {
+.games__time-hours,
+.games__date-day {
   @include mixins.font-info(variables.$font-primary, 24px, 24px, 700);
 
   @include mixins.mobile {
@@ -117,7 +117,7 @@
   }
 }
 
-.games__date--month-year {
+.games__date-month-year {
   @include mixins.mobile {
     @include mixins.font-info(variables.$font-primary, 12px, 12px);
   }
