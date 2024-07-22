@@ -92,11 +92,6 @@
 .subscription__tab--active {
   position: relative;
 
-  & .subscription__tab-button {
-    color: variables.$button-color-primary;
-    text-decoration: none;
-  }
-
   &::after {
     content: "";
     width: 100%;
@@ -107,6 +102,11 @@
     z-index: 1;
     background-color: variables.$button-color-tab-state;
   }
+}
+
+.subscription__tab--active .subscription__tab-button {
+  color: variables.$button-color-primary;
+  text-decoration: none;
 }
 
 .subscription__tab-items {

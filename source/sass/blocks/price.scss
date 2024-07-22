@@ -34,16 +34,18 @@
       transform: rotate(150deg);
       bottom: 10px;
       right: -15px;
-      background-image: image-set(
-        "../img/price/plates-tablet@1x.webp" type("image/webp"),
-        "../img/price/plates-tablet@1x.png" type("image/png")
-      );
+      background-image:
+        image-set(
+          "../img/price/plates-tablet@1x.webp" type("image/webp"),
+          "../img/price/plates-tablet@1x.png" type("image/png")
+        );
 
       @media (resolution >= 2dppx) {
-        background-image: image-set(
-          "../img/price/plates-tablet@2x.webp" type("image/webp"),
-          "../img/price/plates-tablet@2x.png" type("image/png")
-        );
+        background-image:
+          image-set(
+            "../img/price/plates-tablet@2x.webp" type("image/webp"),
+            "../img/price/plates-tablet@2x.png" type("image/png")
+          );
       }
     }
   }

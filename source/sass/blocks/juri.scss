@@ -80,11 +80,11 @@
 }
 
 .juri__button-next {
-  @include mixins.tablet {
-    right: -72px;
+  right: -72px;
+}
 
-    & svg {
-      transform: rotate(180deg);
-    }
+.juri__button-next svg {
+  @include mixins.tablet {
+    transform: rotate(180deg);
   }
 }

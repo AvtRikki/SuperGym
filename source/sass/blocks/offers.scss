@@ -85,77 +85,77 @@
   @include mixins.desktop {
     min-height: 174px;
   }
+}
 
-  & h3 {
-    margin: 0;
-    padding: 0;
+.offers__item h3 {
+  margin: 0;
+  padding: 0;
 
-    @include mixins.mobile {
-      @include mixins.font-info(variables.$font-primary, 22px, 22px, 700);
+  @include mixins.mobile {
+    @include mixins.font-info(variables.$font-primary, 22px, 22px, 700);
 
-      text-align: center;
-    }
-
-    @include mixins.tablet {
-      @include mixins.font-info(variables.$font-primary, 26px, 26px, 700);
-
-      text-align: left;
-    }
-  }
-
-  & span {
-    @include mixins.font-info(variables.$font-primary, 64px, 64px, 700);
-
-    display: block;
     text-align: center;
-
-    @include mixins.mobile {
-      margin-top: 9px;
-    }
-
-    @include mixins.tablet {
-      margin-top: 20px;
-    }
-
-    @include mixins.desktop {
-      @include mixins.font-info(variables.$font-primary, 70px, 70px, 700);
-    }
   }
 
-  & p {
-    margin: 0;
+  @include mixins.tablet {
+    @include mixins.font-info(variables.$font-primary, 26px, 26px, 700);
 
-    @include mixins.mobile {
-      @include mixins.font-info(variables.$font-primary, 16px, 20px, 300);
+    text-align: left;
+  }
+}
 
-      text-align: center;
-    }
+.offers__item span {
+  @include mixins.font-info(variables.$font-primary, 64px, 64px, 700);
 
-    @include mixins.tablet {
-      @include mixins.font-info(variables.$font-primary, 16px, 24px, 300);
+  display: block;
+  text-align: center;
 
-      text-align: left;
-    }
+  @include mixins.mobile {
+    margin-top: 9px;
   }
 
-  & img {
-    display: block;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+  @include mixins.tablet {
+    margin-top: 20px;
   }
 
-  & a {
-    display: inline-block;
+  @include mixins.desktop {
+    @include mixins.font-info(variables.$font-primary, 70px, 70px, 700);
+  }
+}
 
-    @include mixins.tablet {
-      margin: auto 0 0;
-    }
+.offers__item p {
+  margin: 0;
+
+  @include mixins.mobile {
+    @include mixins.font-info(variables.$font-primary, 16px, 20px, 300);
+
+    text-align: center;
   }
 
-  & .offers__item-description {
-    padding: 0;
+  @include mixins.tablet {
+    @include mixins.font-info(variables.$font-primary, 16px, 24px, 300);
+
+    text-align: left;
   }
+}
+
+.offers__item img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.offers__item a {
+  display: inline-block;
+
+  @include mixins.tablet {
+    margin: auto 0 0;
+  }
+}
+
+.offers__item .offers__item-description {
+  padding: 0;
 }
 
 .offers__item--special {
@@ -181,41 +181,42 @@
     grid-template-columns: 1fr 280px;
     grid-row: span 2;
   }
+}
 
-  & h3 {
-    @include mixins.mobile {
-      @include mixins.font-info(variables.$font-primary, 22px, 22px, 700);
-    }
 
-    @include mixins.tablet {
-      @include mixins.font-info(variables.$font-primary, 24px, 24px, 700);
-    }
-
-    @include mixins.desktop {
-      @include mixins.font-info(variables.$font-primary, 26px, 26px, 700);
-    }
+.offers__item--special h3 {
+  @include mixins.mobile {
+    @include mixins.font-info(variables.$font-primary, 22px, 22px, 700);
   }
 
-  & p {
-    @include mixins.mobile {
-      @include mixins.font-info(variables.$font-primary, 16px, 20px, 300);
-    }
-
-    @include mixins.tablet {
-      @include mixins.font-info(variables.$font-primary, 18px, 24px, 300);
-    }
+  @include mixins.tablet {
+    @include mixins.font-info(variables.$font-primary, 24px, 24px, 700);
   }
 
-  & .offers__item-description {
-    gap: 40px;
+  @include mixins.desktop {
+    @include mixins.font-info(variables.$font-primary, 26px, 26px, 700);
+  }
+}
 
-    @include mixins.mobile {
-      padding: 30px;
-    }
+.offers__item--special p {
+  @include mixins.mobile {
+    @include mixins.font-info(variables.$font-primary, 16px, 20px, 300);
+  }
 
-    @include mixins.tablet {
-      padding: 40px 25px;
-    }
+  @include mixins.tablet {
+    @include mixins.font-info(variables.$font-primary, 18px, 24px, 300);
+  }
+}
+
+.offers__item--special .offers__item-description {
+  gap: 40px;
+
+  @include mixins.mobile {
+    padding: 30px;
+  }
+
+  @include mixins.tablet {
+    padding: 40px 25px;
   }
 }
 

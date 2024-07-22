@@ -21,92 +21,92 @@
   @include mixins.desktop {
     gap: 43px;
   }
+}
 
-  & dl {
-    display: flex;
-    flex-direction: column;
-    padding: 0;
-    margin: 0;
+.feature-card dl {
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  margin: 0;
 
-    @include mixins.mobile {
-      align-items: center;
-    }
-
-    @include mixins.tablet {
-      align-items: flex-start;
-    }
+  @include mixins.mobile {
+    align-items: center;
   }
 
-  & dt {
-    padding: 0;
-    margin: 0;
-    background: variables.$border-card;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
+  @include mixins.tablet {
+    align-items: flex-start;
+  }
+}
 
-    @include mixins.mobile {
-      @include mixins.font-info(variables.$font-primary, 64px, 64px, 700);
-    }
+.feature-card dt {
+  padding: 0;
+  margin: 0;
+  background: variables.$border-card;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
 
-    @include mixins.tablet {
-      @include mixins.font-info(variables.$font-primary, 70px, 70px, 700);
-    }
+  @include mixins.mobile {
+    @include mixins.font-info(variables.$font-primary, 64px, 64px, 700);
   }
 
-  & dd {
-    color: variables.$font-color-accent-alternate;
-    padding: 0;
-    margin: 0;
+  @include mixins.tablet {
+    @include mixins.font-info(variables.$font-primary, 70px, 70px, 700);
+  }
+}
 
-    @include mixins.mobile {
-      @include mixins.font-info(variables.$font-primary, 14px, 20px);
-    }
+.feature-card dd {
+  color: variables.$font-color-accent-alternate;
+  padding: 0;
+  margin: 0;
 
-    @include mixins.tablet {
-      @include mixins.font-info(variables.$font-primary, 14px, 22px);
-    }
+  @include mixins.mobile {
+    @include mixins.font-info(variables.$font-primary, 14px, 20px);
   }
 
-  & div {
-    display: flex;
-    flex-direction: column;
-    margin: 0;
+  @include mixins.tablet {
+    @include mixins.font-info(variables.$font-primary, 14px, 22px);
+  }
+}
 
-    @include mixins.mobile {
-      align-items: center;
-    }
+.feature-card div {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+
+  @include mixins.mobile {
+    align-items: center;
+  }
+}
+
+.feature-card h3 {
+  margin: 0 0 12px;
+
+  @include mixins.mobile {
+    @include mixins.font-info(variables.$font-primary, 18px, 20px);
   }
 
-  & h3 {
-    margin: 0 0 12px;
-
-    @include mixins.mobile {
-      @include mixins.font-info(variables.$font-primary, 18px, 20px);
-    }
-
-    @include mixins.tablet {
-      @include mixins.font-info(variables.$font-primary, 20px, 20px);
-    }
-
-    @include mixins.desktop {
-      @include mixins.font-info(variables.$font-primary, 22px, 22px);
-    }
+  @include mixins.tablet {
+    @include mixins.font-info(variables.$font-primary, 20px, 20px);
   }
 
-  & p {
-    margin: 0;
+  @include mixins.desktop {
+    @include mixins.font-info(variables.$font-primary, 22px, 22px);
+  }
+}
 
-    @include mixins.mobile {
-      @include mixins.font-info(variables.$font-primary, 14px, 22px, 300);
+.feature-card p {
+  margin: 0;
 
-      text-align: center;
-    }
+  @include mixins.mobile {
+    @include mixins.font-info(variables.$font-primary, 14px, 22px, 300);
 
-    @include mixins.tablet {
-      @include mixins.font-info(variables.$font-primary, 16px, 24px, 300);
+    text-align: center;
+  }
 
-      text-align: left;
-    }
+  @include mixins.tablet {
+    @include mixins.font-info(variables.$font-primary, 16px, 24px, 300);
+
+    text-align: left;
   }
 }
 
@@ -127,52 +127,53 @@
     padding: 58px 40px;
     gap: 30px;
   }
+}
 
-  & dl {
-    @include mixins.tablet {
-      align-items: center;
-    }
+
+.feature-card--special dl {
+  @include mixins.tablet {
+    align-items: center;
+  }
+}
+
+.feature-card--special dt {
+  color: inherit;
+  -webkit-text-fill-color: variables.$font-color-secondary;
+
+  @include mixins.tablet {
+    margin-bottom: 25px;
   }
 
-  & dt {
-    color: inherit;
-    -webkit-text-fill-color: variables.$font-color-secondary;
+  @include mixins.desktop {
+    margin-bottom: 10px;
+  }
+}
 
-    @include mixins.tablet {
-      margin-bottom: 25px;
-    }
+.feature-card--special dd {
+  color: inherit;
+  margin-bottom: 20px;
 
-    @include mixins.desktop {
-      margin-bottom: 10px;
-    }
+  @include mixins.mobile {
+    @include mixins.font-info(variables.$font-primary, 22px, 22px, 700);
   }
 
-  & dd {
-    color: inherit;
-    margin-bottom: 20px;
-
-    @include mixins.mobile {
-      @include mixins.font-info(variables.$font-primary, 22px, 22px, 700);
-    }
-
-    @include mixins.tablet {
-      @include mixins.font-info(variables.$font-primary, 24px, 24px, 700);
-    }
-
-    @include mixins.desktop {
-      @include mixins.font-info(variables.$font-primary, 26px, 26px, 700);
-
-      margin-bottom: 30px;
-    }
+  @include mixins.tablet {
+    @include mixins.font-info(variables.$font-primary, 24px, 24px, 700);
   }
 
-  p {
-    @include mixins.tablet {
-      text-align: center;
-    }
+  @include mixins.desktop {
+    @include mixins.font-info(variables.$font-primary, 26px, 26px, 700);
 
-    @include mixins.desktop {
-      min-width: 280px;
-    }
+    margin-bottom: 30px;
+  }
+}
+
+.feature-card--special p {
+  @include mixins.tablet {
+    text-align: center;
+  }
+
+  @include mixins.desktop {
+    min-width: 280px;
   }
 }

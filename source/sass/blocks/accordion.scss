@@ -3,58 +3,58 @@
 
 .accordion__item {
   position: relative;
+}
 
-  & button {
-    width: 100%;
-    text-align: left;
-    border: none;
-    color: inherit;
-    background: none;
+.accordion__item button {
+  width: 100%;
+  text-align: left;
+  border: none;
+  color: inherit;
+  background: none;
 
-    @include mixins.mobile {
-      @include mixins.font-info(variables.$font-primary, 20px, 20px);
+  @include mixins.mobile {
+    @include mixins.font-info(variables.$font-primary, 20px, 20px);
 
-      padding: 21px 52px 20px 0;
-    }
-
-    @include mixins.tablet {
-      @include mixins.font-info(variables.$font-primary, 22px, 22px);
-
-      padding: 32px 118px 32px 0;
-    }
-
-    @include mixins.desktop {
-      @include mixins.font-info(variables.$font-primary, 24px, 24px);
-
-      padding: 23px 125px 23px 0;
-    }
+    padding: 21px 52px 20px 0;
   }
 
-  & p {
+  @include mixins.tablet {
+    @include mixins.font-info(variables.$font-primary, 22px, 22px);
+
+    padding: 32px 118px 32px 0;
+  }
+
+  @include mixins.desktop {
+    @include mixins.font-info(variables.$font-primary, 24px, 24px);
+
+    padding: 23px 125px 23px 0;
+  }
+}
+
+.accordion__item p {
+  @include mixins.font-info(variables.$font-primary, 16px, 20px, 300);
+
+  margin: 0 0 21px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s ease;
+
+  @include mixins.mobile {
     @include mixins.font-info(variables.$font-primary, 16px, 20px, 300);
 
-    margin: 0 0 21px;
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height 0.5s ease;
+    padding-right: 52px;
+  }
 
-    @include mixins.mobile {
-      @include mixins.font-info(variables.$font-primary, 16px, 20px, 300);
+  @include mixins.tablet {
+    @include mixins.font-info(variables.$font-primary, 18px, 24px, 300);
 
-      padding-right: 52px;
-    }
+    margin-top: -22px;
+    padding-right: 118px;
+  }
 
-    @include mixins.tablet {
-      @include mixins.font-info(variables.$font-primary, 18px, 24px, 300);
-
-      margin-top: -22px;
-      padding-right: 118px;
-    }
-
-    @include mixins.desktop {
-      margin-top: 0;
-      padding-right: 200px;
-    }
+  @include mixins.desktop {
+    margin-top: 0;
+    padding-right: 200px;
   }
 }
 
@@ -149,25 +149,23 @@
   }
 }
 
-.accordion__item--expanded {
-  & p {
-    max-height: 800px;
-    transition: max-height 2s ease;
-  }
+.accordion__item--expanded p {
+  max-height: 800px;
+  transition: max-height 2s ease;
+}
 
-  & .accordion__item-expander {
-    background-color: variables.$button-color-secondary;
-  }
+.accordion__item--expanded .accordion__item-expander {
+  background-color: variables.$button-color-secondary;
+}
 
-  & .accordion__item-expander::before {
-    background-color: variables.$background-color-primary;
-  }
+.accordion__item--expanded .accordion__item-expander::before {
+  background-color: variables.$background-color-primary;
+}
 
-  & .accordion__item-expander::after {
-    background-color: variables.$background-color-transparent;
-  }
+.accordion__item--expanded .accordion__item-expander::after {
+  background-color: variables.$background-color-transparent;
+}
 
-  & .accordion__item-expander:active::after {
-    background-color: variables.$button-color-accent;
-  }
+.accordion__item--expanded .accordion__item-expander:active::after {
+  background-color: variables.$button-color-accent;
 }

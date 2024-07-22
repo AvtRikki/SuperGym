@@ -55,37 +55,37 @@
   display: block;
   width: 100%;
   position: relative;
+}
 
-  & .form__input {
-    @include mixins.font-info(variables.$font-primary, 14px, 22px, 300);
+.form__input-label .form__input {
+  @include mixins.font-info(variables.$font-primary, 14px, 22px, 300);
 
-    padding: 10px 0 4px;
-    width: 100%;
-    color: variables.$font-color-secondary;
-    background-color: variables.$background-color-transparent;
-    border: 1px solid variables.$background-color-transparent;
-    border-bottom: 1px solid rgba(variables.$background-color-primary, 0.5);
-  }
+  padding: 10px 0 4px;
+  width: 100%;
+  color: variables.$font-color-secondary;
+  background-color: variables.$background-color-transparent;
+  border: 1px solid variables.$background-color-transparent;
+  border-bottom: 1px solid rgba(variables.$background-color-primary, 0.5);
+}
 
-  & .form__input-invalid {
-    border-bottom: 1px solid variables.$forms-color-error;
-  }
+.form__input-label .form__input-invalid {
+  border-bottom: 1px solid variables.$forms-color-error;
+}
 
-  & input:hover {
-    border-bottom: 1px solid variables.$background-color-primary;
-  }
+.form__input-label input:hover {
+  border-bottom: 1px solid variables.$background-color-primary;
+}
 
-  & input:focus {
-    border: 1px solid variables.$background-color-primary;
-  }
+.form__input-label input:focus {
+  border: 1px solid variables.$background-color-primary;
+}
 
-  & input:disabled {
-    opacity: 0.4;
-  }
+.form__input-label input:disabled {
+  opacity: 0.4;
+}
 
-  & input::placeholder {
-    color: rgba(variables.$font-color-secondary, 0.4);
-  }
+.form__input-label input::placeholder {
+  color: rgba(variables.$font-color-secondary, 0.4);
 }
 
 .form__input-error-message {
