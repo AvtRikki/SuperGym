@@ -8,17 +8,6 @@
 .about__wrapper {
   @include mixins.mobile {
     padding: 40px 0;
-
-    & p {
-      @include mixins.font-info(variables.$font-primary, 14px, 22px, 300);
-
-      padding: 0 15px;
-      margin: 0 0 36px;
-    }
-
-    & p + p {
-      display: none;
-    }
   }
 
   @include mixins.tablet {
@@ -26,19 +15,6 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-
-    & p {
-      @include mixins.font-info(variables.$font-primary, 16px, 24px, 300);
-
-      text-align: center;
-      max-width: 502px;
-      padding: 0;
-      margin: 0 0 36px;
-    }
-
-    & p + p {
-      display: none;
-    }
   }
 
   @include mixins.desktop {
@@ -46,24 +22,54 @@
     display: grid;
     grid-template-columns: 355px 145px auto;
     grid-template-rows: repeat(5, auto);
+  }
+}
 
-    & p {
-      place-self: start center;
-      grid-row: 3/4;
-      margin-bottom: 0;
-      text-align: left;
-    }
+.about__wrapper p {
+  @include mixins.mobile {
+    @include mixins.font-info(variables.$font-primary, 14px, 22px, 300);
 
-    & p + p {
-      display: inline;
-      grid-row: 4/5;
-    }
+    padding: 0 15px;
+    margin: 0 0 36px;
+  }
 
-    & picture {
-      place-self: start center;
-      grid-column: 3/4;
-      grid-row: 1/6;
-    }
+  @include mixins.tablet {
+    @include mixins.font-info(variables.$font-primary, 16px, 24px, 300);
+
+    text-align: center;
+    max-width: 502px;
+    padding: 0;
+    margin: 0 0 36px;
+  }
+
+  @include mixins.desktop {
+    place-self: start center;
+    grid-row: 3/4;
+    margin-bottom: 0;
+    text-align: left;
+  }
+}
+
+.about__wrapper p + p {
+  @include mixins.mobile {
+    display: none;
+  }
+
+  @include mixins.tablet {
+    display: none;
+  }
+
+  @include mixins.desktop {
+    display: inline;
+    grid-row: 4/5;
+  }
+}
+
+.about__wrapper picture {
+  @include mixins.desktop {
+    place-self: start center;
+    grid-column: 3/4;
+    grid-row: 1/6;
   }
 }
 
