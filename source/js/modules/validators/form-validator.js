@@ -25,6 +25,7 @@ export class FormValidator {
               errorMessage.textContent = this.#DEFAULT_ERROR_MESSAGE;
             }
 
+            errorMessage.style.width = `${input.scrollWidth}px`;
             errorMessage.style.display = 'block';
             valid = false;
           } else {
