@@ -5,7 +5,7 @@
   background-color: variables.$background-color-accent;
 
   @include mixins.mobile {
-    padding: 70px 15px;
+    padding: 71px 15px;
   }
 
   @include mixins.tablet {
@@ -25,7 +25,7 @@
 
 .form__title {
   color: variables.$font-color-secondary;
-  margin-bottom: 36px;
+  margin-bottom: 24px;
 
   @include mixins.tablet {
     @include mixins.font-info(variables.$font-secondary, 54px, 54px, 600);
@@ -40,7 +40,7 @@
   @include mixins.mobile {
     display: flex;
     flex-direction: column;
-    gap: 36px;
+    gap: 25px;
   }
 
   @include mixins.tablet {
@@ -100,6 +100,10 @@
 
   text-transform: uppercase;
   background-color: variables.$background-color-transparent;
+
+  @include mixins.mobile {
+    margin-top: 11px;
+  }
 
   @include mixins.tablet {
     grid-column: 1 / 3;

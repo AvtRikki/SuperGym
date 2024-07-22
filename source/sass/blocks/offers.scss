@@ -7,7 +7,7 @@
 
 .offers__wrapper {
   @include mixins.mobile {
-    padding: 40px 0;
+    padding: 39px 0 40px;
   }
 
   @include mixins.tablet {
@@ -71,7 +71,7 @@
 .offers__item {
   border: 7px solid;
   border-image: variables.$button-color-alternate 30;
-  padding: 20px;
+  padding: 20px 20px 14px;
 
   @include mixins.mobile {
     margin: 0 15px;
@@ -94,6 +94,7 @@
   @include mixins.mobile {
     @include mixins.font-info(variables.$font-primary, 22px, 22px, 700);
 
+    margin-bottom: 10px;
     text-align: center;
   }
 
@@ -112,6 +113,7 @@
 
   @include mixins.mobile {
     margin-top: 9px;
+    margin-bottom: 6px;
   }
 
   @include mixins.tablet {
@@ -127,7 +129,7 @@
   margin: 0;
 
   @include mixins.mobile {
-    @include mixins.font-info(variables.$font-primary, 16px, 20px, 300);
+    @include mixins.font-info(variables.$font-primary, 14px, 22px, 300);
 
     text-align: center;
   }
@@ -187,6 +189,7 @@
 .offers__item--special h3 {
   @include mixins.mobile {
     @include mixins.font-info(variables.$font-primary, 22px, 22px, 700);
+    margin: 0;
   }
 
   @include mixins.tablet {
@@ -212,7 +215,8 @@
   gap: 40px;
 
   @include mixins.mobile {
-    padding: 30px;
+    padding: 30px 30px 23px;
+    gap: 20px;
   }
 
   @include mixins.tablet {
@@ -225,7 +229,7 @@
   flex-direction: column;
 
   @include mixins.mobile {
-    gap: 28px;
+    gap: 10px;
     align-items: center;
   }
 

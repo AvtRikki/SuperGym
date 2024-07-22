@@ -10,7 +10,7 @@
   @include mixins.mobile {
     min-width: 290px;
     max-width: 290px;
-    padding: 50px 42px;
+    padding: 44px 35px 42px;
     gap: 18px;
   }
 
@@ -46,7 +46,7 @@
 }
 
 .subscription-card__description {
-  margin: 0 0 66px;
+  margin: 0 0 46px;
 
   @include mixins.mobile {
     @include mixins.font-info(variables.$font-primary, 14px, 22px, 300);
@@ -103,4 +103,8 @@
 
 .subscription-card__action {
   align-self: stretch;
+
+  @include mixins.mobile {
+    padding: 26px 22px;
+  }
 }

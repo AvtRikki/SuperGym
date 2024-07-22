@@ -31,6 +31,7 @@
 
   @include mixins.mobile {
     align-items: center;
+    margin-bottom: 12px;
   }
 
   @include mixins.tablet {
@@ -101,6 +102,7 @@
     @include mixins.font-info(variables.$font-primary, 14px, 22px, 300);
 
     text-align: center;
+    padding: 0 26px;
   }
 
   @include mixins.tablet {
@@ -114,7 +116,7 @@
   background-color: variables.$button-color-secondary;
   color: variables.$font-color-secondary;
   width: 100%;
-  padding: 40px 40px 41px;
+  padding: 32px 45px 38px;
 
   @include mixins.tablet {
     flex-direction: column;
@@ -139,6 +141,10 @@
   color: inherit;
   -webkit-text-fill-color: variables.$font-color-secondary;
 
+  @include mixins.mobile {
+    margin-bottom: 5px;
+  }
+
   @include mixins.tablet {
     margin-bottom: 25px;
   }
@@ -154,10 +160,12 @@
 
   @include mixins.mobile {
     @include mixins.font-info(variables.$font-primary, 22px, 22px, 700);
+    margin-bottom: 10px;
   }
 
   @include mixins.tablet {
     @include mixins.font-info(variables.$font-primary, 24px, 24px, 700);
+    margin-bottom: 20px;
   }
 
   @include mixins.desktop {

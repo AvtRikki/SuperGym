@@ -3,7 +3,7 @@
 
 .juri {
   @include mixins.mobile {
-    padding: 40px 15px;
+    padding: 41px 15px 39px;
   }
 
   @include mixins.tablet {
@@ -41,7 +41,7 @@
   text-align: center;
 
   @include mixins.mobile {
-    margin-bottom: 20px;
+    margin-bottom: 19px;
   }
 
   @include mixins.tablet {

@@ -7,7 +7,7 @@
 
 .about__wrapper {
   @include mixins.mobile {
-    padding: 40px 0;
+    padding: 41px 0;
   }
 
   @include mixins.tablet {
@@ -30,7 +30,7 @@
     @include mixins.font-info(variables.$font-primary, 14px, 22px, 300);
 
     padding: 0 15px;
-    margin: 0 0 36px;
+    margin: 0 0 35px;
   }
 
   @include mixins.tablet {
@@ -76,7 +76,7 @@
 .about__title {
   @include mixins.mobile {
     padding: 0 15px;
-    margin-bottom: 12px;
+    margin-bottom: 10px;
   }
 
   @include mixins.tablet {
@@ -93,7 +93,8 @@
 }
 
 .about__additional-info {
-  margin-bottom: 36px;
+  display: inline-block;
+  margin-bottom: 37px;
 
   @include mixins.mobile {
     @include mixins.font-info(variables.$font-primary, 18px, 20px);

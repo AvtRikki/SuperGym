@@ -6,7 +6,7 @@
   flex-direction: column;
 
   @include mixins.mobile {
-    padding: 0 15px;
+    padding: 0;
   }
 
   @include mixins.tablet {

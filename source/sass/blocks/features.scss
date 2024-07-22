@@ -5,7 +5,7 @@
   background-color: variables.$background-color-secondary;
 
   @include mixins.mobile {
-    padding: 40px 0;
+    padding: 42px 0;
   }
 
   @include mixins.tablet {
@@ -22,7 +22,7 @@
   text-align: center;
 
   @include mixins.mobile {
-    margin: 0 0 40px;
+    margin: 0 0 39px;
   }
 
   @include mixins.tablet {
@@ -40,7 +40,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 35px;
+    gap: 37px;
   }
 
   @include mixins.tablet {

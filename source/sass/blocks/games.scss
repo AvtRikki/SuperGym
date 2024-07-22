@@ -27,7 +27,7 @@
 .games__info {
   background-color: variables.$background-color-banner;
   display: grid;
-  grid-template-columns: 1fr min-content;
+  grid-template-columns: 1fr 56px;
   grid-column-gap: 17px;
   padding: 40px;
 
@@ -70,7 +70,7 @@
 
 .games__time-title,
 .games__date-title {
-  margin-bottom: 3px;
+  margin-bottom: 2px;
 
   @include mixins.mobile {
     @include mixins.font-info(variables.$font-primary, 16px, 20px, 300);
@@ -84,10 +84,10 @@
 .games__time-value,
 .games__date-value {
   position: relative;
-  margin: 0;
   padding-top: 2px;
   display: flex;
   align-items: center;
+  margin: 0 0 6px;
 
   &::after {
     width: 100%;
