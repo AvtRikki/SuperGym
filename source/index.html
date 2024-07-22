@@ -874,16 +874,18 @@
       <section class="section form" data-test="form">
         <div class="form__wrapper">
           <h2 class="section__title form__title">Бесплатное занятие</h2>
-          <form class="form__subscription"  id="subscription-form" action="https://echo.htmlacademy.ru/" method="post">
+          <form class="form__subscription"  id="subscription-form" action="https://echo.htmlacademy.ru/" method="post" novalidate>
             <label class="form__input-label">
-              <input type="text" name="name" id="name" required pattern="[a-zA-Z\u0400-\u04ff\-\s]{1,}" minlength="1"
-                placeholder="Имя" title="В поле Имя допускается ввод только букв и пробелов.">
-              <span>Имя</span>
+              <input class="form__input" type="text" name="name" id="name" required pattern="[a-zA-Z\u0400-\u04ff\-\s]{1,}" minlength="1"
+                     placeholder="Имя" aria-label="Имя" data-validation-pattern="В поле Имя допускается ввод только букв и пробелов."
+                     data-validation-required="Обязательное поле">
+              <span class="form__input-error-message" id="name-error"></span>
             </label>
             <label class="form__input-label">
-              <input type="tel" name="phone" id="phone" placeholder="Телефон" required pattern="[+]?[0-9\-\(\)\s]+"
-                title="В Поле Телефон допускается ввод только цифр и спец символов.">
-              <span>Телефон</span>
+              <input class="form__input" type="tel" name="phone" id="phone" placeholder="Телефон" required pattern="[+]?[0-9\-\(\)\s]+"
+                     aria-label="Телефон" data-validation-pattern="В Поле Телефон допускается ввод только цифр и спец символов."
+                     data-validation-required="Обязательное поле">
+              <span class="form__input-error-message" id="phone-error"></span>
             </label>
             <button class="form__input-button button button__primary" type="submit">Отправить</button>
           </form>

@@ -1,8 +1,9 @@
 import { TabControl } from './modules/tab-controls/tab-control.js';
-import {VideoLoader} from './modules/videos/video-loader.js';
-import {SwiperInitializer} from './modules/sliders/swiper-initializer.js';
-import {ScrollerControl} from './modules/scrollers/scroller-control.js';
-import {AccordionControl} from './modules/accordions/accordion-control.js';
+import { VideoLoader } from './modules/videos/video-loader.js';
+import { SwiperInitializer } from './modules/sliders/swiper-initializer.js';
+import { ScrollerControl } from './modules/scrollers/scroller-control.js';
+import { AccordionControl } from './modules/accordions/accordion-control.js';
+import { FormValidator } from './modules/validators/form-validator.js';
 
 const priceTabControl = new TabControl('subscription__tab', 'subscription__tab-item');
 priceTabControl.Initialize();
@@ -30,3 +31,6 @@ accordions.forEach((accordionElement) => {
   const accordion = new AccordionControl(accordionElement);
   accordion.Initalize('accordion__item');
 });
+
+const formValidator = new FormValidator('form__subscription');
+formValidator.Initialize('form__input-invalid');
