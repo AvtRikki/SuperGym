@@ -27,16 +27,12 @@
 
 .footer__logo-wrapper {
   @include mixins.mobile {
-    margin-bottom: 25px;
+    margin-bottom: 19px;
   }
 
   @include mixins.tablet {
     margin-bottom: 0;
   }
-}
-
-.footer__image {
-  display: block;
 }
 
 .footer__social-list {

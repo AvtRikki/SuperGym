@@ -10,20 +10,16 @@
   justify-content: space-between;
 
   @include mixins.mobile {
-    padding: 16px 15px;
+    padding: 15px 15px 12px;
   }
 
   @include mixins.tablet {
-    padding: 30px 45px;
+    padding: 30px 45px 25px;
   }
 
   @include mixins.desktop {
     padding: 30px 103px;
   }
-}
-
-.hero__header-image {
-  display: block;
 }
 
 .hero__header-contacts {
