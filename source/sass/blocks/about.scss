@@ -117,12 +117,13 @@
 }
 
 .about__image {
-  display: block;
+  max-width: 100%;
   width: 100%;
+  height: auto;
   object-fit: cover;
 
   @include mixins.mobile {
-    margin-bottom: 36px;
+    margin-bottom: 29px;
   }
 
   @include mixins.desktop {
