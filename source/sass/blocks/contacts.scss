@@ -3,11 +3,11 @@
 
 .contacts {
   @include mixins.mobile {
-    padding: 36px 15px;
+    padding: 35px 15px;
   }
 
   @include mixins.tablet {
-    padding: 60px 45px;
+    padding: 60px 45px 57px;
   }
 
   @include mixins.desktop {
@@ -50,8 +50,9 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     column-gap: 60px;
-    row-gap: 15px;
+    row-gap: 13px;
     margin: 0 auto;
+    max-width: 440px;
 
     &::after {
       content: "";

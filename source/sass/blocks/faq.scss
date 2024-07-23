@@ -11,7 +11,7 @@
   }
 
   @include mixins.tablet {
-    padding: 60px 45px;
+    padding: 60px 0 65px;
   }
 
   @include mixins.desktop {
@@ -82,6 +82,10 @@
   border: 1px solid variables.$border-color-primary;
   cursor: pointer;
 
+  @include mixins.tablet {
+    padding: 14px 22px;
+  }
+
   &:focus-within,
   &:focus,
   &:hover {
@@ -140,6 +144,13 @@
 
 .faq__page-content-item {
   border-top: 1px solid variables.$border-color-primary;
+
+  @include mixins.tablet {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 87px;
+  }
 
   &:last-child {
     border-bottom: 1px solid variables.$border-color-primary;

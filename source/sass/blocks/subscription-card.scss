@@ -17,7 +17,7 @@
   @include mixins.tablet {
     min-width: 380px;
     max-width: 380px;
-    padding: 65px;
+    padding: 56px 58px 65px;
     gap: 22px;
   }
 
@@ -71,6 +71,7 @@
 
   @include mixins.tablet {
     @include mixins.font-info(variables.$font-primary, 60px, 90px, 700);
+    padding-top: 14px;
   }
 
   &::before {
@@ -93,6 +94,10 @@
   position: relative;
   margin-right: 10px;
   z-index: 2;
+
+  @include mixins.tablet {
+    margin-right: 14px;
+  }
 }
 
 .subscription-card__currency {
@@ -106,5 +111,9 @@
 
   @include mixins.mobile {
     padding: 26px 22px;
+  }
+
+  @include mixins.tablet {
+    padding: 25px;
   }
 }

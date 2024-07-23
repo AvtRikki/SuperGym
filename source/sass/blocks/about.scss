@@ -139,7 +139,7 @@
 
   @include mixins.tablet {
     width: 270px;
-    height: 170px;
+    height: 100%;
   }
 
   @include mixins.desktop {
@@ -156,7 +156,7 @@
   position: relative;
 
   @include mixins.tablet {
-    margin-top: -85px;
+    margin-top: -93px;
   }
 }
 

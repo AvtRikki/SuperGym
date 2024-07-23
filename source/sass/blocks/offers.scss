@@ -78,7 +78,7 @@
   }
 
   @include mixins.tablet {
-    min-height: 211px;
+    min-height: 188px;
     margin: 0;
   }
 
@@ -118,6 +118,7 @@
 
   @include mixins.tablet {
     margin-top: 20px;
+    @include mixins.font-info(variables.$font-primary, 70px, 70px, 700);
   }
 
   @include mixins.desktop {
@@ -154,6 +155,7 @@
 
   @include mixins.tablet {
     margin: auto 0 0;
+    padding-left: 0;
   }
 }
 
@@ -221,7 +223,7 @@
   }
 
   @include mixins.tablet {
-    padding: 40px 25px;
+    padding: 40px 24px 34px;
   }
 }
 

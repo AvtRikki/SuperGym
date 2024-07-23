@@ -4,6 +4,10 @@
 .reviews {
   padding: 40px 15px;
 
+  @include mixins.tablet {
+    padding: 60px 45px;
+  }
+
   @include mixins.desktop {
     padding-top: 100px;
     padding-bottom: 100px;
@@ -112,6 +116,7 @@
     @include mixins.font-info(variables.$font-primary, 22px, 22px);
 
     grid-column: 2/3;
+    margin: 0 0 20px;
   }
 }
 
@@ -150,7 +155,7 @@
 
 .reviews__button--prev {
   @include mixins.tablet {
-    left: -72px;
+    left: -107px;
   }
 
   @include mixins.desktop {
@@ -160,7 +165,7 @@
 
 .reviews__button--next {
   @include mixins.tablet {
-    right: -72px;
+    right: -107px;
   }
 
   @include mixins.desktop {

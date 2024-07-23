@@ -12,7 +12,7 @@
   }
 
   @include mixins.tablet {
-    padding: 60px 45px;
+    padding: 53px 45px 60px;
     display: grid;
     grid-template-columns: auto 300px 378px auto;
   }
@@ -32,6 +32,8 @@
   padding: 40px;
 
   @include mixins.tablet {
+    grid-template-columns: 120px auto;
+    grid-column-gap: 0;
     grid-column: 2/3;
     grid-row: 1 / 2;
   }
@@ -78,16 +80,41 @@
 
   @include mixins.tablet {
     @include mixins.font-info(variables.$font-primary, 18px, 24px, 300);
+    margin-bottom: 1px;
   }
 }
 
-.games__time-value,
+.games__time-value {
+  position: relative;
+  padding-top: 2px;
+  display: flex;
+  align-items: center;
+  margin: 0 0 6px;
+
+  @include mixins.tablet {
+    margin-bottom: 0;
+  }
+
+  &::after {
+    width: 100%;
+    height: 1px;
+    position: absolute;
+    content: "";
+    left: 0;
+    top: 0;
+    background-color: variables.$background-color-primary;
+  }
+}
 .games__date-value {
   position: relative;
   padding-top: 2px;
   display: flex;
   align-items: center;
   margin: 0 0 6px;
+
+  @include mixins.tablet {
+    margin-bottom: 11px;
+  }
 
   &::after {
     width: 100%;
@@ -140,6 +167,7 @@
 
   @include mixins.tablet {
     @include mixins.font-info(variables.$font-primary, 18px, 24px, 300);
+    margin: 0;
   }
 
   @include mixins.desktop {
@@ -152,6 +180,10 @@
 
   grid-column: 1/-1;
 
+  @include mixins.tablet {
+    padding: 20px;
+  }
+
   @include mixins.desktop {
     margin-top: auto;
     padding: 25px 56px;
@@ -163,4 +195,5 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
+  vertical-align: bottom;
 }

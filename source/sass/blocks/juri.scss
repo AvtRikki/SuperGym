@@ -3,11 +3,11 @@
 
 .juri {
   @include mixins.mobile {
-    padding: 34px 15px 39px;
+    padding: 40px 15px 40px;
   }
 
   @include mixins.tablet {
-    padding: 30px 45px;
+    padding: 30px 45px 60px;
   }
 
   @include mixins.desktop {

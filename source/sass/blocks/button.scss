@@ -4,6 +4,9 @@
 .button {
   @include mixins.font-info(variables.$font-primary, 12px, 12px, 700);
 
+  display: flex;
+  align-items: center;
+  justify-content: center;
   text-transform: uppercase;
   border-width: 2px;
   border-style: solid;
