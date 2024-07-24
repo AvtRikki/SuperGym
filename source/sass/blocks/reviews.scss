@@ -2,7 +2,7 @@
 @use "../common/mixins.scss";
 
 .reviews {
-  padding: 40px 15px;
+  padding: 42px 15px;
 
   @include mixins.tablet {
     padding: 60px 45px;
