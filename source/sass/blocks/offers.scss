@@ -118,6 +118,7 @@
 
   @include mixins.tablet {
     margin-top: 20px;
+
     @include mixins.font-info(variables.$font-primary, 70px, 70px, 700);
   }
 
@@ -192,6 +193,7 @@
 .offers__item--special h3 {
   @include mixins.mobile {
     @include mixins.font-info(variables.$font-primary, 22px, 22px, 700);
+
     margin: 0;
   }
 

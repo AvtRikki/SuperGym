@@ -125,7 +125,6 @@
     grid-column: 3 / 4;
     margin-top: 20px;
     margin-bottom: 22px;
-
   }
 }
 
@@ -141,7 +140,7 @@
   @include mixins.mobile {
     @include mixins.font-info(variables.$font-secondary, 62px, 62px, 800);
 
-    letter-spacing: 0.014em;
+    letter-spacing: 0.01em;
     grid-row: 2 / 3;
     grid-column: 3 / 4;
   }
@@ -207,7 +206,6 @@
     align-self: flex-end;
     margin-bottom: 8px;
     padding: 20px;
-
   }
 
   @include mixins.desktop {
@@ -216,6 +214,5 @@
     grid-column: 3 / 4;
     padding: 25px;
     margin-bottom: 29px;
-
   }
 }

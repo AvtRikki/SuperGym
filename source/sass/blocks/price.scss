@@ -66,15 +66,15 @@
       right: -15px;
       background-image:
         image-set(
-            "../img/price/plates-desktop@1x.webp" type("image/webp"),
-            "../img/price/plates-desktop@1x.png" type("image/png")
+          "../img/price/plates-desktop@1x.webp" type("image/webp"),
+          "../img/price/plates-desktop@1x.png" type("image/png")
         );
 
       @media (resolution >= 2dppx) {
         background-image:
           image-set(
-              "../img/price/plates-desktop@2x.webp" type("image/webp"),
-              "../img/price/plates-desktop@2x.png" type("image/png")
+            "../img/price/plates-desktop@2x.webp" type("image/webp"),
+            "../img/price/plates-desktop@2x.png" type("image/png")
           );
       }
     }

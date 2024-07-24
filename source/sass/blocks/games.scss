@@ -111,6 +111,7 @@
     background-color: variables.$background-color-primary;
   }
 }
+
 .games__date-value {
   position: relative;
   padding-top: 2px;
@@ -180,6 +181,7 @@
 
   @include mixins.tablet {
     @include mixins.font-info(variables.$font-primary, 18px, 24px, 300);
+
     margin: 0;
   }
 

@@ -78,6 +78,7 @@
 
   @include mixins.tablet {
     @include mixins.font-info(variables.$font-primary, 60px, 90px, 700);
+
     padding-top: 14px;
   }
 

@@ -36,6 +36,7 @@
 
   @include mixins.tablet {
     @include mixins.font-info(variables.$font-primary, 14px, 22px);
+
     padding: 0;
   }
 

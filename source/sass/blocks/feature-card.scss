@@ -126,7 +126,7 @@
     align-items: center;
     justify-content: center;
     margin: 0 auto;
-    padding: 35px 45px 35px;
+    padding: 35px 45px;
   }
 
   @include mixins.desktop {
@@ -165,11 +165,13 @@
 
   @include mixins.mobile {
     @include mixins.font-info(variables.$font-primary, 22px, 22px, 700);
+
     margin-bottom: 10px;
   }
 
   @include mixins.tablet {
     @include mixins.font-info(variables.$font-primary, 24px, 24px, 700);
+
     margin-bottom: 20px;
   }
 
