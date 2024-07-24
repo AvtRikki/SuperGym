@@ -12,6 +12,7 @@
 
   @include mixins.desktop {
     padding: 60px 103px;
+    border-top: 1px solid variables.$border-color-secondary;
   }
 }
 
