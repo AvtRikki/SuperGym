@@ -18,7 +18,8 @@
   }
 
   @include mixins.desktop {
-    padding: 30px 103px;
+    align-items: center;
+    padding: 30px 103px 24px;
   }
 }
 
@@ -95,7 +96,7 @@
 
   @include mixins.desktop {
     grid-template-columns: auto min-content 270px 56px 500px;
-    padding: 30px 175px 120px;
+    padding: 30px 175px 113px;
   }
 }
 
@@ -122,6 +123,9 @@
     @include mixins.font-info(variables.$font-secondary, 54px, 54px, 600);
 
     grid-column: 3 / 4;
+    margin-top: 20px;
+    margin-bottom: 22px;
+
   }
 }
 
@@ -153,6 +157,7 @@
   @include mixins.desktop {
     @include mixins.font-info(variables.$font-secondary, 92px, 110px, 800);
 
+    letter-spacing: 0.04em;
     place-self: start end;
     grid-column: 3 / 4;
   }
@@ -184,6 +189,7 @@
 
   @include mixins.desktop {
     place-self: center start;
+    margin-bottom: 7px;
   }
 }
 
@@ -208,5 +214,8 @@
     margin-top: auto;
     grid-row: 4 / 5;
     grid-column: 3 / 4;
+    padding: 25px;
+    margin-bottom: 29px;
+
   }
 }

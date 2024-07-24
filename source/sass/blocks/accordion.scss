@@ -58,7 +58,7 @@
 
   @include mixins.desktop {
     margin-top: 0;
-    padding-right: 200px;
+    padding-right: 210px;
   }
 }
 
@@ -184,5 +184,10 @@
   @include mixins.tablet {
     padding-top: 32px;
     padding-bottom: 20px;
+  }
+
+  @include mixins.desktop {
+    padding-top: 31px;
+    padding-bottom: 30px;
   }
 }

@@ -93,6 +93,8 @@
 
   @include mixins.desktop {
     @include mixins.font-info(variables.$font-primary, 22px, 22px);
+
+    margin: 0 0 8px;
   }
 }
 
@@ -128,6 +130,7 @@
   }
 
   @include mixins.desktop {
+    min-width: 360px;
     padding: 58px 40px;
     gap: 30px;
   }
@@ -173,7 +176,7 @@
   @include mixins.desktop {
     @include mixins.font-info(variables.$font-primary, 26px, 26px, 700);
 
-    margin-bottom: 30px;
+    margin-bottom: 0;
   }
 }
 

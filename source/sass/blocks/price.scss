@@ -53,8 +53,30 @@
     padding: 100px 103px;
 
     &::after {
-      left: calc(50% + 365px);
+      content: "";
+      width: 322px;
+      height: 385px;
+      object-fit: cover;
+      position: absolute;
+      background-repeat: no-repeat;
+      background-size: contain;
       transform: translateX(50%) rotate(150deg);
+      left: calc(50% + 294px);
+      bottom: 6px;
+      right: -15px;
+      background-image:
+        image-set(
+            "../img/price/plates-desktop@1x.webp" type("image/webp"),
+            "../img/price/plates-desktop@1x.png" type("image/png")
+        );
+
+      @media (resolution >= 2dppx) {
+        background-image:
+          image-set(
+              "../img/price/plates-desktop@2x.webp" type("image/webp"),
+              "../img/price/plates-desktop@2x.png" type("image/png")
+          );
+      }
     }
   }
 }
@@ -69,5 +91,9 @@
 
   @include mixins.tablet {
     margin-bottom: 35px;
+  }
+
+  @include mixins.desktop {
+    margin-bottom: 21px;
   }
 }

@@ -17,6 +17,7 @@
 
 .contacts__wrapper {
   @include mixins.desktop {
+    width: 100%;
     align-self: flex-start;
   }
 }
@@ -68,7 +69,13 @@
   }
 
   @include mixins.desktop {
-    column-gap: 120px;
+    margin: 0;
+    grid-template-columns: 200px 180px;
+    column-gap: 99px;
+
+    &::after {
+      left: 239px;
+    }
   }
 }
 

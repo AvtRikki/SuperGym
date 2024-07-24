@@ -26,6 +26,10 @@
 
     margin-bottom: 35px;
   }
+
+  @include mixins.desktop {
+    margin-bottom: 74px;
+  }
 }
 
 .reviews__button-wrapper {
@@ -159,7 +163,7 @@
   }
 
   @include mixins.desktop {
-    left: -88px;
+    left: -122px;
   }
 }
 
@@ -169,7 +173,7 @@
   }
 
   @include mixins.desktop {
-    right: -88px;
+    right: -122px;
   }
 }
 

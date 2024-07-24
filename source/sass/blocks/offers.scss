@@ -15,7 +15,7 @@
   }
 
   @include mixins.desktop {
-    padding: 100px 103px;
+    padding: 100px 103px 65px;
   }
 }
 
@@ -224,6 +224,10 @@
 
   @include mixins.tablet {
     padding: 40px 24px 34px;
+  }
+
+  @include mixins.desktop {
+    padding: 40px 45px 34px;
   }
 }
 

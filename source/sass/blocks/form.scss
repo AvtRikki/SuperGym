@@ -19,6 +19,7 @@
 
 .form__wrapper {
   @include mixins.desktop {
+    width: 100%;
     align-self: flex-end;
   }
 }

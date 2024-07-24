@@ -55,18 +55,24 @@
     grid-template-columns: 1fr 1fr 1fr;
     grid-auto-flow: dense;
     grid-template-rows: min-content;
+    margin: 0;
+    row-gap: 82px;
+    column-gap: 40px;
   }
 }
 
 .feature-card:nth-child(3n + 1) {
   @include mixins.desktop {
     grid-column: 1 / 2;
+    max-width: 345px;
   }
 }
 
 .feature-card:nth-child(3n + 2) {
   @include mixins.desktop {
     grid-column: 3 / 4;
+    gap: 80px;
+    max-width: 350px;
   }
 }
 

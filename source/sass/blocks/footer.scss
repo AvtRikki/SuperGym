@@ -46,6 +46,10 @@
     justify-content: flex-end;
     gap: 15px;
   }
+
+  @include mixins.desktop {
+    gap: 10px;
+  }
 }
 
 .footer__social-link {
