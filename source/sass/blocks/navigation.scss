@@ -20,7 +20,8 @@
   }
 
   @include mixins.desktop {
-    column-gap: 82px;
+    column-gap: 81px;
+    letter-spacing: 0.01em;
   }
 }
 

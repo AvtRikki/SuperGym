@@ -60,7 +60,7 @@
     grid-auto-flow: dense;
     grid-template-rows: min-content;
     margin: 0 auto;
-    row-gap: 82px;
+    row-gap: 80px;
     column-gap: 40px;
   }
 }
@@ -75,7 +75,7 @@
 .feature-card:nth-child(3n + 2) {
   @include mixins.desktop {
     grid-column: 3 / 4;
-    gap: 80px;
+    gap: 79px;
     max-width: 350px;
   }
 }

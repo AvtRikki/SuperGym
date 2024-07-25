@@ -11,7 +11,7 @@
   }
 
   @include mixins.tablet {
-    padding: 60px 0 65px;
+    padding: 61px 0 65px;
   }
 
   @include mixins.desktop {
@@ -27,7 +27,7 @@
   }
 
   @include mixins.tablet {
-    margin-bottom: 45px;
+    margin-bottom: 44px;
   }
 
   @include mixins.desktop {
@@ -85,7 +85,7 @@
   cursor: pointer;
 
   @include mixins.tablet {
-    padding: 14px 22px;
+    padding: 15px 22px 13px;
   }
 
   @include mixins.desktop {
@@ -153,16 +153,16 @@
 }
 
 .faq__page-content-item {
-  border-top: 1px solid variables.$border-color-primary;
+  border-top: 1px solid variables.$border-color-secondary;
 
   @include mixins.tablet {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    min-height: 87px;
+    min-height: 88px;
   }
 
   &:last-child {
-    border-bottom: 1px solid variables.$border-color-primary;
+    border-bottom: 1px solid variables.$border-color-secondary;
   }
 }

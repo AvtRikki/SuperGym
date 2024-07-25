@@ -20,6 +20,7 @@
   }
 
   @include mixins.desktop {
+    margin-top: -1px;
     gap: 43px;
   }
 }
@@ -53,6 +54,11 @@
 
   @include mixins.tablet {
     @include mixins.font-info(variables.$font-primary, 70px, 70px, 700);
+  }
+
+  @include mixins.desktop {
+    margin-bottom: 1px;
+    min-width: 71px;
   }
 }
 
@@ -94,7 +100,7 @@
   @include mixins.desktop {
     @include mixins.font-info(variables.$font-primary, 22px, 22px);
 
-    margin: 0 0 8px;
+    margin: 1px 0 8px;
   }
 }
 
