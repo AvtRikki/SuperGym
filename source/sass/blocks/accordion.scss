@@ -25,7 +25,7 @@
   @include mixins.tablet {
     @include mixins.font-info(variables.$font-primary, 22px, 22px);
 
-    padding: 5px 118px 23px 0;
+    padding: 7px 118px 25px 0;
   }
 
   @include mixins.desktop {
@@ -186,8 +186,8 @@
 
 .accordion__item--expanded button {
   @include mixins.tablet {
-    padding-top: 32px;
-    padding-bottom: 19px;
+    padding-top: 33px;
+    padding-bottom: 18px;
   }
 
   @include mixins.desktop {
