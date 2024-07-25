@@ -9,7 +9,7 @@
   }
 
   @include mixins.tablet {
-    padding: 60px 45px;
+    padding: 61px 45px 60px;
   }
 
   @include mixins.desktop {
@@ -26,7 +26,7 @@
   }
 
   @include mixins.tablet {
-    margin: 0 0 50px;
+    margin: 0 0 49px;
   }
 
   @include mixins.desktop {
