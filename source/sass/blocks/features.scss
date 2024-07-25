@@ -5,7 +5,7 @@
   background-color: variables.$background-color-secondary;
 
   @include mixins.mobile {
-    padding: 42px 0;
+    padding: 41px 0;
   }
 
   @include mixins.tablet {
