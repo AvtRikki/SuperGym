@@ -15,7 +15,7 @@
   }
 
   @include mixins.desktop {
-    padding: 100px 58px;
+    padding: 100px 58px 95px;
   }
 }
 
@@ -32,7 +32,7 @@
 
   @include mixins.desktop {
     text-align: left;
-    margin-bottom: 50px;
+    margin-bottom: 49px;
   }
 }
 
@@ -74,6 +74,7 @@
   @include mixins.desktop {
     flex-direction: column;
     gap: 11px;
+    margin-top: 1px;
   }
 }
 
@@ -160,6 +161,11 @@
     flex-direction: column;
     justify-content: center;
     min-height: 88px;
+  }
+
+  @include mixins.desktop {
+    min-height: auto;
+    justify-content: start;
   }
 
   &:last-child {

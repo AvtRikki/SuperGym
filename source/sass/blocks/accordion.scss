@@ -31,7 +31,7 @@
   @include mixins.desktop {
     @include mixins.font-info(variables.$font-primary, 24px, 24px);
 
-    padding: 23px 125px 23px 0;
+    padding: 31px 125px 30px 0;
   }
 }
 
@@ -131,6 +131,10 @@
     height: 40px;
   }
 
+  @include mixins.desktop {
+    top: 23px;
+  }
+
   &::before {
     content: "";
     position: absolute;
@@ -157,7 +161,7 @@
 .accordion__item--expanded p {
   max-height: 800px;
   transition: max-height 2s ease;
-  margin: 0 0 22px;
+  margin: 0 0 23px;
 }
 
 .accordion__item--expanded .accordion__item-expander {
