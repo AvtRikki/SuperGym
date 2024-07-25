@@ -8,8 +8,8 @@ const desktopSections = [
   {section: 'offers', misMatchThreshold: 0.9},
   {section: 'faq', misMatchThreshold: 0.9},
   {section: 'reviews', misMatchThreshold: 0.7},
-  {section: 'form', misMatchThreshold: 0.9},
-  {section: 'footer', misMatchThreshold: 1.0}
+  {section: 'form', misMatchThreshold: 1.0},
+  {section: 'footer', misMatchThreshold: 1.9}
 ];
 
 const tabletSections = [
