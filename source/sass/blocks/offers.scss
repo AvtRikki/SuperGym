@@ -7,7 +7,7 @@
 
 .offers__wrapper {
   @include mixins.mobile {
-    padding: 39px 0 40px;
+    padding: 41px 0 40px;
   }
 
   @include mixins.tablet {
@@ -23,7 +23,7 @@
   text-align: center;
 
   @include mixins.mobile {
-    margin-bottom: 40px;
+    margin-bottom: 39px;
   }
 
   @include mixins.tablet {
@@ -113,7 +113,7 @@
 
   @include mixins.mobile {
     margin-top: 9px;
-    margin-bottom: 6px;
+    margin-bottom: 7px;
   }
 
   @include mixins.tablet {
