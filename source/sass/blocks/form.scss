@@ -5,7 +5,7 @@
   background-color: variables.$background-color-accent;
 
   @include mixins.mobile {
-    padding: 71px 15px;
+    padding: 71px 15px 70px;
   }
 
   @include mixins.tablet {

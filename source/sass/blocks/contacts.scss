@@ -3,7 +3,7 @@
 
 .contacts {
   @include mixins.mobile {
-    padding: 35px 15px;
+    padding: 37px 15px;
   }
 
   @include mixins.tablet {
@@ -93,7 +93,7 @@
   @include mixins.mobile {
     @include mixins.font-info(variables.$font-primary, 20px, 20px);
 
-    margin: 0 0 12px;
+    margin: 0 0 13px;
   }
 
   @include mixins.tablet {
@@ -119,5 +119,11 @@
 
 .contacts__item-info--phone,
 .contacts__item-info--email {
-  margin: 0 0 4px;
+  @include mixins.mobile {
+    margin: 0 0 9px;
+  }
+
+  @include mixins.tablet {
+    margin: 0 0 4px;
+  }
 }
