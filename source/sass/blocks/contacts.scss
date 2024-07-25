@@ -11,7 +11,7 @@
   }
 
   @include mixins.desktop {
-    padding: 60px 103px;
+    padding: 59px 103px 60px;
     border-top: 1px solid variables.$border-color-secondary;
   }
 }
@@ -32,7 +32,7 @@
 
   @include mixins.desktop {
     text-align: left;
-    margin-bottom: 36px;
+    margin-bottom: 37px;
   }
 }
 
@@ -72,7 +72,8 @@
   @include mixins.desktop {
     margin: 0;
     grid-template-columns: 200px 180px;
-    column-gap: 99px;
+    column-gap: 98px;
+    row-gap: 14px;
 
     &::after {
       left: 239px;
@@ -98,7 +99,7 @@
   @include mixins.tablet {
     @include mixins.font-info(variables.$font-primary, 24px, 24px);
 
-    margin: 0 0 5px;
+    margin: 0 0 6px;
   }
 }
 
@@ -114,4 +115,9 @@
   @include mixins.tablet {
     @include mixins.font-info(variables.$font-primary, 14px, 22px);
   }
+}
+
+.contacts__item-info--phone,
+.contacts__item-info--email {
+  margin: 0 0 4px;
 }
