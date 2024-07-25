@@ -117,8 +117,8 @@
   }
 }
 
-.contacts__item-info--phone,
-.contacts__item-info--email {
+.contacts__item-title--phone,
+.contacts__item-title--email {
   @include mixins.mobile {
     margin: 0 0 9px;
   }

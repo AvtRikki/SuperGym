@@ -97,6 +97,7 @@
 
 .form__input-label input::placeholder {
   @include mixins.font-info(variables.$font-primary, 14px, 22px);
+
   color: rgba(variables.$font-color-secondary, 0.4);
 }
 
