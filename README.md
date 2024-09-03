@@ -1,56 +1,65 @@
-# accelerator-first-project
-Стартовый репозиторий для работы над первым проектом в «Акселераторе» профессии «Фронтенд-разработчик»
 
-## Начало работы
+# SuperGym
 
-1. Установите node.js
-2. Проверьте версию node.js с помощью `node --version`
-3. Поддерживаемая версия сборки 18+
-4. Установите зависимости с помощью
+**SuperGym** is a frontend development project created as part of the "Frontend Developer Accelerator" course. This project is focused on creating a responsive and adaptive website using modern web development tools.
 
-```shell
-npm i
-```
+## Project Structure
 
-5. Запустите проект с помощью 
+- **source/**: Contains the primary project files including HTML, SCSS, and JavaScript.
+  - **img/**: Image assets.
+  - **icons/**: SVG icons used for creating sprites.
+  - **styles/**: SCSS files for styling.
+  - **scripts/**: JavaScript files for interactive functionality.
+  - **index.html**: Main HTML file for the project.
 
-```shell
+## Getting Started
+
+### Prerequisites
+
+Ensure you have the following installed:
+
+- [Node.js](https://nodejs.org/)
+
+### Installation
+
+1. **Clone the Repository**:
+   ```bash
+   git clone git@github.com:AvtRikki/SuperGym.git
+   ```
+2. **Navigate to the Project Directory**:
+   ```bash
+   cd SuperGym
+   ```
+3. **Install Dependencies**:
+   ```bash
+   npm install
+   ```
+
+### Running the Project
+
+To start the project in development mode:
+
+```bash
 npm run dev
 ```
 
-6. Дополнительные команды для работы со сборкой
+This will start a development server and open the project in your default web browser.
 
-- `npm run convert-rastr`: создайте webp версии растровых изображений в папке `source/img/`;
-- `npm run dev` запускает сервер для разработки;
-- `npm run build` собирает оптимизированную версию проекта в папке `dist`;
-- `npm run preview` запускает сервер с оптимизированной версией;
-- спрайт с иконками собран из файлов в папке `source/img/sprite/`;
-- для доступа к спрайту из `html` используйте путь `href="/__spritemap#sprite-{название файла иконки}"`;
+### Additional Commands
 
-7. В файле `index.html` в папке `source` описаны подсказки по структуре вашего проекта.
+- `npm run convert-rastr`: Create WebP versions of raster images in the `source/img/` directory.
+- `npm run build`: Generate an optimized production build in the `dist/` directory.
+- `npm run preview`: Preview the optimized production build.
+- `npm run test`: Run Pixel Perfect testing.
+- `npm run w3c`: Check HTML validity.
+- `npm run linthtml`: Lint HTML files.
+- `npm run stylelint`: Lint stylesheets.
+- `npm run lint-js`: Lint JavaScript files.
 
-## Самопроверки
+## Contributing
 
-Тестирование Pixel Perfect
+Contributions are welcome! Please fork this repository and submit pull requests for any improvements or bug fixes.
 
-Запустить тестирование вашего проекта можно с помощью
+## License
 
-```shell
-npm run test 
-```
-
-Тестовый фреймворк обращается к адресу `localhost:3000` поэтому сервер должен быть запущен с `npm run dev`, запускайте команду тестирования в новом терминале, не закрывая сервер с проектом.
-
-На windows масштаб дисплея в системе 100%
-
-
-В проекте используется множество дополнительных инструментов для самопроверки. Используйте их во время работы и перед отправкой вашего проекта:
-
-- `npm run w3c`: проверяет валидность HTML;
-- `npm run linthtml`: проверяет разметку по правилам linthtml;
-- `npm run html-validate`: проверяет HTML;
-- `npm run lint-bem`: проверяет БЭМ;
-- `npm run stylelint`: проверяет стили по правилам stylelint;
-- `npm run lint-js`: проверяет скрипты по правилам eslint;
-- `npm run ls-lint`: проверяет именование файлов и папок;
-- `npm run editorconfig`: проверяет editorconfig.
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for more details.
